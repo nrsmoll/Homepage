@@ -25,7 +25,7 @@ SECRET_KEY = 'd9vs_-pn4q_l6j(3x9my1bx%r8o0va%yb&+zwo9qjdh1zd!4=h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.nrsmoll.com.au', '127.0.0.1']
 
 
 # Application definition
