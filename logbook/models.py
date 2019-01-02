@@ -14,7 +14,7 @@ class Consultation(models.Model):
     sex = models.CharField(choices=GENDER_CHOICES, max_length=30)
     date_of_contact = models.DateField(null=False)
     location = models.ForeignKey('Location', on_delete=models.SET_NULL, null=True)
-    case_specialty = models.ForeignKey('Specialty', on_delete=models.SET_NULL, null=False)
+    case_specialty = models.ForeignKey('Specialty', on_delete=models.SET_NULL, null=True)
     diagnosis = models.CharField(max_length=400, verbose_name='Working Diagnosis')
     notes = models.TextField(max_length=1000, help_text='Enter a description of the case')
 
@@ -39,7 +39,7 @@ class Procedure(models.Model):
         (str(2), 'Female'))
     sex = models.CharField(choices=GENDER_CHOICES, max_length=30)
     procedure_name = models.CharField(max_length=128, null=False)
-    procedure_class = models.ForeignKey('Procedure_Class', on_delete=models.SET_NULL, null=False)
+    procedure_class = models.ForeignKey('Procedure_Class', on_delete=models.SET_NULL, null=True)
     procedure_list = (
         (str(2), 'Diagnostic'),
         (str(1), 'Therapeutic'),)

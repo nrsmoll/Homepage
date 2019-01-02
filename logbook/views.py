@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from logbook.models import Consultation
+from logbook.models import Consultation, Procedure
 
 
 def index(request):
@@ -13,7 +13,7 @@ def logbook_index(request):
     num_cases = Consultation.objects.all().count()
 
     # Total Procedures
-    num_procedures = Consultation.objects.filter(case_type='2').count()
+    num_procedures = Procedure.objects.all().count()
 
     context = {
         'num_cases': num_cases,
