@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from logbook.models import Case, Procedures
+
+from logbook.models import Consultation
 
 
 def index(request):
@@ -9,10 +10,10 @@ def logbook_index(request):
     """View function for home page of site."""
 
     # Generate counts of some of the main objects
-    num_cases = Case.objects.all().count()
+    num_cases = Consultation.objects.all().count()
 
     # Total Procedures
-    num_procedures = Case.objects.filter(case_type='2').count()
+    num_procedures = Consultation.objects.filter(case_type='2').count()
 
     context = {
         'num_cases': num_cases,

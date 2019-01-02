@@ -1,54 +1,43 @@
 from django.db import models
-
 from django.urls import reverse  # Used to generate URLs by reversing the URL patterns
 
 
-class Case(models.Model):
+class Consultation(models.Model):
     """Model representing a book (but not a specific copy of a book)."""
+    uid = models.CharField(max_length=20)
     name = models.CharField(max_length=400)
-    date_of_contact = models.DateField(null=False)
-    case_types_list = (
-        (str(1), 'Consultation'),
-        (str(2), 'Procedure'),)
-    case_type = models.CharField(
-        max_length=256,
-        choices=case_types_list,
-        default=1, )
-    case_specialty_list = (
-        (str(1), 'General Practice'),
-        (str(2), 'Internal Medicine'),
-        (str(3), 'Surgery'),
-        (str(4), 'Pain Medicine'),
-        (str(5), 'Anesthetics'),
-        (str(6), 'Paediatrics'),
-        (str(7), 'Mental Health'),
-        (str(8), 'Opthalmology'),
-        (str(9), 'Orthopedics'),
-        (str(10), 'Trauma'),
-        (str(11), 'Obstetrics & Gynaecology'),
-    )
-    case_specialty = models.CharField(
-        max_length=256,
-        choices=case_specialty_list,
-        default=1, )
-    duration = models.CharField(max_length=5, help_text='minutes')
-    location = models.ForeignKey('Locations', on_delete=models.SET_NULL, null=True)
-    procedure = models.ForeignKey('Procedures', on_delete=models.SET_NULL, null=True)
-    notes = models.TextField(max_length=1000, help_text='Enter a description of the case')
 
+    date_of_birth = models.DateField()
+    GENDER_CHOICES = (
+        (str(1), 'Male'),
+        (str(2), 'Female'))
+    sex = models.CharField(choices=GENDER_CHOICES, max_length=30)
+    date_of_contact = models.DateField(null=False)
+    location = models.ForeignKey('Location', on_delete=models.SET_NULL, null=True)
+    case_specialty = models.ForeignKey('Specialty', on_delete=models.SET_NULL, null=False)
+    diagnosis = models.CharField(max_length=400, verbose_name='Working Diagnosis')
+    notes = models.TextField(max_length=1000, help_text='Enter a description of the case')
     def get_absolute_url(self):
         """Returns the url to access a detail record for this book."""
         return reverse('case-detail', kwargs={'pk': self.pk})
-
     def __str__(self):
         """String for representing the Model object."""
-        return self.name + ' - ' + str(self.date_of_contact) + ' - ' + str(
-            self.case_type) + ' - ' + str(self.case_specialty)
+        return self.name + ' - ' + str(self.date_of_contact) + ' - ' + str(self.case_specialty)
 
 
-class Procedures(models.Model):
+class Procedure(models.Model):
     """Model representing a procedure type."""
-    procedure = models.CharField(max_length=100)
+    uid = models.CharField(max_length=20, verbose_name='UID')
+    name = models.CharField(max_length=400)
+    location = models.ForeignKey('Location', on_delete=models.SET_NULL, null=True)
+    date_of_birth = models.DateField()
+    date_of_contact = models.DateField(null=False)
+    GENDER_CHOICES = (
+        (str(1), 'Male'),
+        (str(2), 'Female'))
+    sex = models.CharField(choices=GENDER_CHOICES, max_length=30)
+    procedure_name = models.CharField(max_length=128, null=False)
+    procedure_class = models.ForeignKey('Procedure_Class', on_delete=models.SET_NULL, null=False)
     procedure_list = (
         (str(2), 'Diagnostic'),
         (str(1), 'Therapeutic'),)
@@ -56,13 +45,49 @@ class Procedures(models.Model):
         max_length=256,
         choices=procedure_list,
         default=1, )
+    specialty = models.ForeignKey('Specialty', on_delete=models.SET_NULL, null=True)
+    diagnosis = models.CharField(max_length=400, verbose_name='Working Diagnosis')
+
+    supervision_list = (
+        (str(1), 'Senior Practitioner'),
+        (str(2), 'Supervised'),
+        (str(3), 'Observed'),)
+    supervision = models.CharField(
+        max_length=128,
+        choices=supervision_list,
+        default=1, )
+    notes = models.TextField(max_length=1000, help_text='Enter a description of the case')
 
     def __str__(self):
         """String for representing the Model object."""
-        return f'{self.procedure}'
+        return self.name + ' - ' + self.procedure_name + ' - ' + str(self.date_of_contact)
 
 
-class Locations(models.Model):
+class Specialty(models.Model):
+    class Meta:
+        verbose_name_plural = "Specialties"
+
+    """Model representing a specialty type."""
+    specialty = models.CharField(max_length=128)
+
+    def __str__(self):
+        """String for representing the Model object."""
+        return f'{self.specialty}'
+
+
+class Procedure_Class(models.Model):
+    class Meta:
+        verbose_name_plural = "Procedure Classes"
+
+    """Model representing a specialty type."""
+    procedure_class = models.CharField(max_length=128)
+
+    def __str__(self):
+        """String for representing the Model object."""
+        return f'{self.procedure_class}'
+
+
+class Location(models.Model):
     """Model representing a procedure type."""
     location = models.CharField(max_length=200)
     location_list = (
