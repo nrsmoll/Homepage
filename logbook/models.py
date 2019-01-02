@@ -17,9 +17,11 @@ class Consultation(models.Model):
     case_specialty = models.ForeignKey('Specialty', on_delete=models.SET_NULL, null=False)
     diagnosis = models.CharField(max_length=400, verbose_name='Working Diagnosis')
     notes = models.TextField(max_length=1000, help_text='Enter a description of the case')
+
     def get_absolute_url(self):
         """Returns the url to access a detail record for this book."""
         return reverse('case-detail', kwargs={'pk': self.pk})
+
     def __str__(self):
         """String for representing the Model object."""
         return self.name + ' - ' + str(self.date_of_contact) + ' - ' + str(self.case_specialty)
