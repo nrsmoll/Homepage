@@ -2,7 +2,6 @@ from django.db import models
 from django.urls import reverse  # Used to generate URLs by reversing the URL patterns
 
 
-
 class Consultation(models.Model):
     """Model representing a book (but not a specific copy of a book)."""
     uid = models.CharField(max_length=20, verbose_name='UID')
