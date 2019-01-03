@@ -49,20 +49,14 @@ class Procedure(models.Model):
     sex = models.CharField(choices=GENDER_CHOICES, max_length=30, verbose_name='Gender')
     procedure_name = models.CharField(max_length=128, null=False)
     procedure_class = models.ForeignKey('Procedure_Class', on_delete=models.SET_NULL, null=True)
-    procedure_list = (
-        (str(2), 'Diagnostic'),
-        (str(1), 'Therapeutic'),)
-    procedure_type = models.CharField(
-        max_length=256,
-        choices=procedure_list,
-        default=1, )
     specialty = models.ForeignKey('Specialty', on_delete=models.SET_NULL, null=True)
     diagnosis = models.CharField(max_length=400, verbose_name='Working Diagnosis')
 
     supervision_list = (
         (str(1), 'Senior Practitioner'),
         (str(2), 'Supervised'),
-        (str(3), 'Observed'),)
+        (str(3), 'Assisted'),
+        (str(4), 'Observed'),)
     supervision = models.CharField(
         max_length=128,
         choices=supervision_list,
