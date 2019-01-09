@@ -1,0 +1,23 @@
+<!-- Loads the path to the static files-->
+{% extends "base.html" %}
+
+{% block content %}
+
+    <form action="mlCPET_results/" method="post">
+        {% csrf_token %}
+        {{ form.as_ul }}
+        <input type="submit" value="Submit">
+    </form>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+

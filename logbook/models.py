@@ -24,7 +24,9 @@ class Consultation(models.Model):
         max_length=128,
         choices=supervision_list,
         default=1, )
-    notes = models.TextField(max_length=1000, help_text='Enter a description of the consultation')
+    notes = models.TextField(max_length=1000,
+                             help_text='Enter a description of the consultation. Do not include the plan.')
+    plan = models.TextField(max_length=1000, help_text='Enter the patients plan here', default='')
 
     def get_absolute_url(self):
         """Returns the url to access a detail record for this book."""
@@ -60,7 +62,9 @@ class Procedure(models.Model):
         max_length=128,
         choices=supervision_list,
         default=1, )
-    notes = models.TextField(max_length=1000, help_text='Enter a description of the case')
+    notes = models.TextField(max_length=1000, help_text='Enter a description of the procedure')
+    plan = models.TextField(max_length=1000, help_text='Enter the patients post-procedure plan here', default='')
+
 
     def __str__(self):
         """String for representing the Model object."""
