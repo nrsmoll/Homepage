@@ -1,6 +1,6 @@
 from django.urls import path
 
-from . import views
+from machinelearn import views
 
 urlpatterns = [
     path('ml-learn/', views.mlcpet_calc, name='mlcpet_calc'),
