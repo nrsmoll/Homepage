@@ -27,6 +27,7 @@ class Consultation(models.Model):
     notes = models.TextField(max_length=1000,
                              help_text='Enter a description of the consultation. Do not include the plan.')
     plan = models.TextField(max_length=1000, help_text='Enter the patients plan here', default='')
+    date_of_entry = models.DateTimeField(null=False, auto_now_add=True)
 
     def get_absolute_url(self):
         """Returns the url to access a detail record for this book."""
@@ -64,7 +65,7 @@ class Procedure(models.Model):
         default=1, )
     notes = models.TextField(max_length=1000, help_text='Enter a description of the procedure')
     plan = models.TextField(max_length=1000, help_text='Enter the patients post-procedure plan here', default='')
-
+    date_of_entry = models.DateTimeField(null=False, auto_now_add=True)
 
     def __str__(self):
         """String for representing the Model object."""
