@@ -13,8 +13,9 @@ def mlcpet_calc(request):
     if request.method == 'POST':
         form = CpetForm(request.POST)
         if form.is_valid():
-            # for pythonanywhere: path = '/home/nrsmoll/Homepage/static/models' the route has to be changed
-            path = '/home/nrsmoll/Dropbox/PyProjects/Homepage/static/models'
+            # for pythonanywhere: the route has to be changed
+            path = '/home/nrsmoll/Homepage/static/models'
+            #path = '/home/nrsmoll/Dropbox/PyProjects/Homepage/static/models'
             logreg_path = os.path.join(path, 'logistic_classifier_20181201.pkl')
             with open(logreg_path, 'rb') as f:
                 logreg = pickle.load(f)

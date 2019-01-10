@@ -4,18 +4,18 @@ from django.urls import reverse  # Used to generate URLs by reversing the URL pa
 
 class Consultation(models.Model):
     """Model representing a book (but not a specific copy of a book)."""
-    uid = models.CharField(max_length=20, verbose_name='UID', null=True)
-    name = models.CharField(max_length=400)
+    uid = models.CharField(max_length=20, verbose_name='UID', blank=True, null=True)
+    name = models.CharField(max_length=400, null=True)
     date_of_birth = models.DateField(blank=True, null=True)
     GENDER_CHOICES = (
         (str(1), 'Male'),
         (str(2), 'Female'))
-    sex = models.CharField(choices=GENDER_CHOICES, max_length=30, null=True)
+    sex = models.CharField(choices=GENDER_CHOICES, max_length=30, blank=True, null=True)
     date_of_contact = models.DateField(null=False)
-    location = models.ForeignKey('Location', on_delete=models.SET_NULL, null=True)
-    post_code = models.CharField(max_length=12, verbose_name='Post Code', null=True)
-    specialty = models.ForeignKey('Specialty', on_delete=models.SET_NULL, null=True)
-    diagnosis = models.CharField(max_length=400, verbose_name='Working Diagnosis', null=True)
+    location = models.ForeignKey('Location', on_delete=models.SET_NULL, null=True, blank=True)
+    post_code = models.CharField(max_length=12, verbose_name='Post Code', blank=True, null=True)
+    specialty = models.ForeignKey('Specialty', on_delete=models.SET_NULL, null=True, blank=True)
+    diagnosis = models.CharField(max_length=400, verbose_name='Working Diagnosis', null=True, blank=True)
     supervision_list = (
         (str(1), 'Senior Practitioner'),
         (str(2), 'Supervised'),
@@ -25,8 +25,8 @@ class Consultation(models.Model):
         choices=supervision_list,
         default=1, null=True)
     notes = models.TextField(max_length=20000,
-                             help_text='Enter a description of the consultation. Do not include the plan.', null=True)
-    plan = models.TextField(max_length=10000, help_text='Enter the patients plan here', default='', null=True)
+                             help_text='Enter a description of the consultation. Do not include the plan.', blank=True, null=True)
+    plan = models.TextField(max_length=10000, help_text='Enter the patients plan here', default='', blank=True, null=True)
     date_of_entry = models.DateTimeField(null=False, auto_now_add=True)
 
     def get_absolute_url(self):
@@ -40,16 +40,16 @@ class Consultation(models.Model):
 
 class Procedure(models.Model):
     """Model representing a procedure type."""
-    uid = models.CharField(max_length=20, verbose_name='UID', null=True)
-    name = models.CharField(max_length=400)
-    location = models.ForeignKey('Location', on_delete=models.SET_NULL, null=True)
-    date_of_birth = models.DateField(verbose_name='Date of Birth')
-    date_of_contact = models.DateField(null=False, verbose_name='Procedure Date')
+    uid = models.CharField(max_length=20, verbose_name='UID', blank=True, null=True)
+    name = models.CharField(max_length=400, null=True)
+    location = models.ForeignKey('Location', on_delete=models.SET_NULL, null=True, blank=True)
+    date_of_birth = models.DateField(verbose_name='Date of Birth', blank=True, null=True)
+    date_of_contact = models.DateField(verbose_name='Procedure Date', null=True, blank=True)
     GENDER_CHOICES = (
         (str(1), 'Male'),
         (str(2), 'Female'))
-    sex = models.CharField(choices=GENDER_CHOICES, max_length=30, verbose_name='Gender', null=True)
-    procedure_name = models.CharField(max_length=128, null=False)
+    sex = models.CharField(choices=GENDER_CHOICES, max_length=30, verbose_name='Gender', blank=True, null=True)
+    procedure_name = models.CharField(max_length=128, null=True)
     procedure_class = models.ForeignKey('Procedure_Class', on_delete=models.SET_NULL, null=True)
     specialty = models.ForeignKey('Specialty', on_delete=models.SET_NULL, null=True)
     diagnosis = models.CharField(max_length=400, verbose_name='Working Diagnosis', null=True)
@@ -63,9 +63,9 @@ class Procedure(models.Model):
         max_length=128,
         choices=supervision_list,
         default=1, )
-    notes = models.TextField(max_length=20000, help_text='Enter a description of the procedure', null=True)
+    notes = models.TextField(max_length=20000, help_text='Enter a description of the procedure', blank=True, null=True)
     plan = models.TextField(max_length=10000, help_text='Enter the patients post-procedure plan here', default='',
-                            null=True)
+                            blank=True, null=True)
     date_of_entry = models.DateTimeField(null=False, auto_now_add=True)
 
     def __str__(self):
