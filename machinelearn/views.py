@@ -1,3 +1,4 @@
+import os
 import pickle
 
 import numpy as np
@@ -12,23 +13,24 @@ def mlcpet_calc(request):
     if request.method == 'POST':
         form = CpetForm(request.POST)
         if form.is_valid():
-            # for pythonanywhere, the route has to be changed to '/home/nrsmoll/nrsmoll/static/models/'
-            logreg_path = 'static/models/logistic_classifier_20181201.pkl'
+            # for pythonanywhere, the route has to be changed to '/home/nrsmoll/Homepage/static/models/'
+            path = '/home/nrsmoll/Dropbox/PyProjects/Homepage/static/models'
+            logreg_path = os.path.join(path, 'logistic_classifier_20181201.pkl')
             with open(logreg_path, 'rb') as f:
                 logreg = pickle.load(f)
-            svc_path = 'static/models/svc_classifier_20181201.pkl'
+            svc_path = os.path.join(path, 'svc_classifier_20181201.pkl')
             with open(svc_path, 'rb') as f:
                 svc = pickle.load(f)
-            rf_path = 'static/models/rf_classifier_20181201.pkl'
+            rf_path = os.path.join(path, 'rf_classifier_20181201.pkl')
             with open(rf_path, 'rb') as f:
                 rf = pickle.load(f)
-            linear_path = 'static/models/linear_regression_20181201.pkl'
+            linear_path = os.path.join(path, 'linear_regression_20181201.pkl')
             with open(linear_path, 'rb') as f:
                 linear = pickle.load(f)
-            svr_path = 'static/models/svr_regression_20181201.pkl'
+            svr_path = os.path.join(path, 'svr_regression_20181201.pkl')
             with open(svr_path, 'rb') as f:
                 svr = pickle.load(f)
-            rfr_path = 'static/models/rfr_regression_20181201.pkl'
+            rfr_path = os.path.join(path, 'rfr_regression_20181201.pkl')
             with open(rfr_path, 'rb') as f:
                 rfr = pickle.load(f)
 
