@@ -3,13 +3,49 @@
 
 {% block content %}
 <h1>Logbook</h1>
-<p>Multiple Sources</p>
+    <p>These procedures are a snapshot of what I have done and seen during my time as a clinician.
+        Note that these are only a very small proportion of the patients I have seen, as I do not
+        capture all patients or procedures i see/do.</p>
 
-<h2>Consultations and Procedures</h2>
-    <p>The library has the following record counts:</p>
-  <ul>
-    <li><strong>Total Cases:</strong> {{ num_cases }}</li>
-    <li><strong>Total Procedures:</strong> {{ num_procedures }}</li>
-  </ul>
+    <h2>Consultations</h2>
+    <p><strong>Total Consultations:</strong> {{ num_cases }}</p>
+    <div style="width:300px;">
+        <table class="table table-sm">
+            <thead class="thead-dark">
+            <tr>
+                <th style="width: 80.00%"><p class="text-left">Specialty</p></th>
+                <th style="width: 20.00%"><p class="text-left">Count</p></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><p class="text-left">Medical</p></td>
+                <td> {{ num_medical }}</td>
+            </tr>
+            <tr>
+                <td><p class="text-left">Obstetrics and Gynaecology</p></td>
+                <td> {{ num_og }} </td>
+            </tr>
+            <tr>
+                <td><p class="text-left">Trauma</p></td>
+                <td> {{ num_trauma }} </td>
+            </tr>
+            <tr>
+                <td><p class="text-left">Anesthetics</p></td>
+                <td> {{ num_anesthetics }} </td>
+            </tr>
+            <tr>
+                <td><p class="text-left">Palliative Care</p></td>
+                <td>{{ num_pallcare }}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <h2>Procedures</h2>
+    <p><strong>Total Procedures:</strong> {{ num_procedures }}</p>
+
+
 
 {% endblock %}

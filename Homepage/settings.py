@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'logbook',
+    'machinelearn',
+    'crispy_forms',
     'import_export',
 ]
 

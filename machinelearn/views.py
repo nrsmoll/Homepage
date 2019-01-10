@@ -36,10 +36,10 @@ def mlcpet_calc(request):
 
             firstname = form.cleaned_data['firstname']
             lastname = form.cleaned_data['lastname']
-            age = int(form.cleaned_data['age'])
-            bmi = int(form.cleaned_data['bmi'])
-            chronotropic = int(form.cleaned_data['chronotropic'])
-            etco2 = int(form.cleaned_data['etco2'])
+            age = form.cleaned_data['age']
+            bmi = form.cleaned_data['bmi']
+            chronotropic = form.cleaned_data['chronotropic']
+            etco2 = form.cleaned_data['etco2']
 
             mlist = np.array([[age, bmi, etco2, chronotropic]])
             logpred = int(list(logreg.predict(mlist))[0])
