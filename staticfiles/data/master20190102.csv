@@ -1,0 +1,381 @@
+id,MRN,Name,Hospital,Date_of_Encounter,date_of_birth,Age,sex,Category,Diagnosis,Supervision,notes,post_code
+1,8013350,"Miller, Bridie",Bateman's Bay,20-05-2017,,19,,Obstetrics & Gyneacology,Gastroenteritis,1,,
+2,8124400,"Wadley, Nathan",Bateman's Bay,20-05-2017,,5,,Trauma,Dislocated fracture of distal tip of proximal phalanx of 2nd digit,1,,
+3,8355726,"Thomas, Sian",Bateman's Bay,20-05-2017,,24,,Medical,Anaphylaxis,1,,
+4,7935655,"Paranthoiene, Liam",Bateman's Bay,20-05-2017,,17,,Trauma,Laceration,1,,
+5,2903723,"Maher, Nigel",Bateman's Bay,20-05-2017,,42,,Medical,Chest pain,1,,
+6,1477601,"Geoghegan, Dale",Bateman's Bay,20-05-2017,,70,,Medical,Medication review,1,,
+7,7982828,"Williams, Keanye",Bateman's Bay,20-05-2017,,8,,Trauma,Closed fracture of midshaft of radius,1,,
+8,1564516,"Driscoll, David",Bateman's Bay,19-05-2017,,71,,Medical,APO,1,,
+9,8355729,"McNamara, Connor",Bateman's Bay,20-05-2017,,5,,Medical,Croup,1,,
+10,8281565,"Martel, Madeline",Bateman's Bay,21-05-2017,,18,,Medical,Gastroenteritis,1,,
+11,8210970,"Wood, Emileigh",Bateman's Bay,21-05-2017,,3,,Trauma,Mild Head Injury,1,,
+12,8198146,"King, Kathryn",Bateman's Bay,21-05-2017,,53,,Medical,Shoulder pain,1,,
+13,8313726,"Hawke, Amari",Bateman's Bay,21-05-2017,,0.9,,Trauma,Mild TBI,1,,
+14,3010383,"Jones, Paul",Bateman's Bay,21-05-2017,,52,,Trauma,Fractured Forearm,1,,
+15,8186778,"Meyn, Will",Bateman's Bay,21-06-2017,,3,,Medical,Croup,1,,
+16,8143144,"Nash, Max",Bateman's Bay,21-05-2017,,7,,Medical,Fevers,1,,
+17,1488434,"Olsson, John",Bateman's Bay,21-05-2017,,75,,Medical,Blocked Catheter,1,,
+18,8355830,"Teileigha, George",Bateman's Bay,21-05-2017,,2,,Medical,Skin Rash,1,,
+19,2049861,"Harrington, Zoe",Bega,10-06-2017,,22,,Dental,Piece of ham stuck in tooth,1,,
+20,7927409,"Broughton, Olli",Bega,10-06-2017,,9,,Trauma,Mild head injury,1,,
+21,7623977,"Jones, Kirstie",Bega,10-06-2017,,24,,Obstetrics & Gyneacology,Dysfunctional uterine bleeding,1,,
+22,8327209,"Greenup, Jack",Bega,10-06-2017,,0.92,,Trauma,Mild head injury,1,,
+23,2191365,"Wood, Sandra",Bega,10-06-2017,,69,,Trauma,Undisplaced fracture of distal clavicle,1,,
+24,2102070,"Mckerlie, Chloe",Bega,10-06-2017,,19,,Medical,Myofascial pain syndrome,1,,
+25,8358077,"Hardy, Riley",Bega,11-06-2017,,9,,Medical,Otitis Media,1,,
+26,7955511,"Ketteringham, Jessie",Bega,11-06-2017,,8,,Trauma,Laceration,1,,
+27,1874652,"Wilton-Umback, Jenna",Bega,11-06-2017,,32,,Medical,Hand-foot-mouth Disease,1,,
+28,8358117,"Jackson, Michelle",Bega,11-06-2017,,56,,Trauma,Low back trauma,1,,
+29,8337067,"Cousins, Lynnette",Bega,11-06-2017,,66,,Burns,Facial burn,1,,
+30,2073972,"Nott, John",Bega,11-06-2017,,84,,Medical,LRTI,1,,
+31,4771218,"Wickes, Kathryn",Bega,11-06-2017,,53,,Trauma,Fractured 10th Rib,1,,
+32,8293943,"Cotton, Kasey",Bega,12-06-2017,,1.41,,Medical,Rash,1,,
+33,7998462,"Rootsey, Chaise",Bega,12-06-2017,,7,,Medical,Tonsillitis,1,,
+34,1777749,"Grealy, Helen",Bega,12-06-2017,,63,,Medical,Exacerbation of asthma,1,,
+35,8358237,"Ashcroft, William",Bega,12-06-2017,,8,,Orthopedic,Fractured fibula,1,,
+36,8358243,"Holland, Christine",Bega,12-06-2017,,80,,Medical,Drug-induced complete heart block,1,,
+37,8353769,"Ansara, Alice",Moruya,3-06-2017,,34,,Obstetrics & Gyneacology,Abdominal Pain,1,,
+38,8064856,"Henry, James",Moruya,3-06-2017,,15,,Trauma,Fracture of right 3rd distal phalanx,1,,
+39,8220105,"Parkin, Joe-Dempsey",Moruya,3-06-2017,,16,,Trauma,Shoulder Dislocation,1,,
+40,4238876,"Reid, Claire",Moruya,3-06-2017,,16,,Burns,Chemical Burn,1,,
+41,2129327,"Buchanan, Vickie",Moruya,3-06-2017,,55,,Medical,Lower Leg Myofascial Pain Syndrome,1,,
+42,8355130,"Dewberry, Joshua",Bega,9-06-2017,,24,,Surgical,Bleeding Angiomyolipoma,1,,
+43,1896267,"Sawtell, Elaine",Bega,9-06-2017,,76,,Medical,Back Pain,1,,
+44,1676470,"Whitby, Marjorie",Bega,9-06-2017,,85,,Medical,PICC line infection,1,,
+45,3313698,"Pearsall, Robert",Bega,9-06-2017,,74,,Medical,Pyelonephritis,1,,
+46,8167308,"Hamilton, Rebecca",Bega,9-06-2017,,38,,Obstetrics & Gyneacology,Threatened Miscarriage,1,D/W O & G,
+47,4307312,"Gosling, Chrystal",Moruya,6-06-2017,,21,,Obstetrics & Gyneacology,Costochondritis,1,,
+48,7884217,"Reid, Ashley",Moruya,6-06-2017,,39,,Trauma,Sprained Ankle,1,,
+49,8346469,"Jamieson, Kathleen",Moruya,6-06-2017,,63,,Medical,Groin Hematoma post-angio,1,,
+50,4147974,"Nouwens, Robert",Moruya,5-06-2017,,67,,Medical,Respiratory Sepsis,1,,
+51,8356419,"Pippen, Ty",Bateman's Bay,27-05-2017,,16,,Trauma,Crush injury to ankle,1,,
+52,8196128,"Osborne, John",Bateman's Bay,27-05-2017,,75,,Medical,Depression,1,,
+53,1473778,"Ellevsen, David",Bateman's Bay,27-05-2017,,42,,Medical,Rib pain,1,,
+54,4275194,"Westbury, Rebecca",Bateman's Bay,27-05-2017,,26,,Obstetrics & Gyneacology,Recurrent Mastitis,1,,
+55,1635550,"Burt, Yhizara",Bateman's Bay,27-05-2017,,32,,Obstetrics & Gyneacology,Endometriosis,1,,
+56,1415030,"Hookes-McDonogh, Dylan",Bateman's Bay,27-05-2017,,24,,Surgical,Ear Abscess,1,,
+57,2177101,"Jessop, Robert",Bateman's Bay,25-05-2017,,45,,Medical,Gout,1,,
+58,8356341,"Rienstra, Richard",Bateman's Bay,25-05-2017,,59,,Medical,Cellulitis,1,,
+59,8265194,"Tomicic, Martina",Bateman's Bay,26-05-2017,,2,,Trauma,Laceration to foot,1,,
+60,1559712,"Froude, Lorna",Bateman's Bay,26-05-2017,,86,,Medical,STEMI,1,Collapse with 18 hour lie,
+61,8356466,"Backhouse, Bodhi",Bateman's Bay,26-05-2017,,0.04,,Medical,Acid Reflux,1,,
+62,2296316,"Thompson, Nathan",Bega,28-04-2017,,22,,Opthalmology,Flash Burn,1,,
+63,2610398,"Hedger, Jake",Bega,29-04-2017,,17,,Trauma,Low Back Pain,1,Lift tackle,
+64,8276453,"Pook, Anastasia",Bega,30-04-2017,,1.66,,Medical,Fevers,1,,
+65,8353405,"Dawson, Angus",Bega,1-05-2017,,0.12,,Medical,Fevers,1,,
+66,7912797,"Kasani, Anwar",Bateman's Bay,12-04-2017,,32,,Trauma,Self-stabbing,1,,
+67,8216197,"Butcher, Rhonda",Bateman's Bay,12-04-2017,,63,,Medical,UTI,1,,
+68,8178139,"Pan, Isabella",Bateman's Bay,12-04-2017,,3,,Medical,Recurrent Tonsillitis,1,,
+69,8203803,"Mitchell, Miah",Bateman's Bay,12-04-2017,,3,,Medical,Viral Ilness,1,,
+70,7866321,"Wilson, John",Bateman's Bay,12-04-2017,,62,,Medical,Tension-type headache,1,,
+71,3124243,"Anderson, Steven",Bateman's Bay,12-04-2017,,16,,Trauma,Laceration,1,,
+72,8230591,"Kidd, Adam",Moruya,8-04-2017,,2,,Orthopedic,Supracondylar Fracture,1,,
+73,8276440,"Moran, Jack",Moruya,9-04-2017,,1.58,,Medical,New onset seizure disorder,1,developmentally delayed child,
+74,8350664,"McInnes, Kate",Bateman's Bay,11-04-2017,,27,,Obstetrics & Gyneacology,Gastroenteritis,1,15 weeks pregnant,
+75,8243792,"Moy Nash, William",Bateman's Bay,11-04-2017,,2,,Medical,Laceration,1,,
+76,8274876,"Lawer, Frank",Moruya,9-04-2017,,1.66,,Medical,Skin rash,1,,
+77,1402034,"Fetherston, Barbara",Bateman's Bay,11-04-2017,,58,,Medical,Complex Migraine,1,,
+78,1469709,"Hughes, Rachel",Bateman's Bay,11-04-2017,,19,,Medical,First Seizure,1,,
+79,2153669,"Worthington, Rene",South East Regional Hospital,25-04-2017,,16,,Medical,Acute Tonsillitis,1,,
+80,8294051,"Lush-brodie, Jaykob",Moruya,17-04-2017,,1.25,,Medical,Viral Pneumonitis,1,,
+81,7889697,"Jones, Jessica",Moruya,14-04-2017,,10,,Trauma,Laceration,1,,
+82,8351021,"Tegart, Abigail",Moruya,14-04-2017,,11,,Trauma,Wrist Sprain,1,,
+83,3,"Traub-Rehm, Monique",Moruya,14-04-2017,,3,,Trauma,Laceration,1,,
+84,8351038,"Hedger, Thomas",Moruya,14-04-2017,,3,,Medical,Early Croup,1,,
+85,8351104,"Brierley, Brielle",Moruya,14-04-2017,,3,,Trauma,Vagina trauma,1,Broomstick to the vagina,
+86,8145918,"Heydon, Max",Moruya,15-04-2017,,27,,Surgical,Abscess,1,,
+87,8351247,"Hadden, Russell",Moruya,15-04-2017,,32,,Procedure,Cannulation,1,,
+88,8280059,"Arneson, Clark",Moruya,15-04-2017,,1.5,,Medical,Mild Bronchiolitis,1,,
+89,8351311,"Gray, Peter",Bateman's Bay,15-04-2017,,71,,Trauma,Anterior Dislocation of Shoulder,1,,
+90,8198872,"Fuller, Tyler",Moruya,15-04-2017,,4,,Medical,Exacerbation of asthma,1,,
+91,7949271,"Stabback, Grace",Moruya,16-04-2017,,17,,Medical,Musculoskeletal Chest Pain,1,,
+92,8351546,"Brill, Annie",Moruya,16-04-2017,,20,,Medical,URTI,1,,
+93,8278408,"Thomas, Jeramiah",Moruya,16-04-2017,,1.5,,Trauma,Mild Head Injury,1,,
+94,8351500,"Madden, Jane",Moruya,16-04-2017,,54,,Opthalmology,Conjunctivitis,1,,
+95,1494458,"Monaghan, Brianna",Moruya,16-04-2017,,18,,Orthopedic,Blunt force injury to right forearm,1,,
+96,4309390,"Robertson, Vicki-lynne",Moruya,16-04-2017,,58,,Medical,Complex Regional Pain Syndrome,1,,
+97,8351433,"Carrigan, Ava",Moruya,16-04-2017,,3,,Medical,Exacerbation of Asthma,1,,
+98,8351439,"Matthew, Fraser",Moruya,16-04-2017,,0.75,,Medical,Teething,1,,
+99,8351423,"Power, Genevieve",Moruya,16-04-2017,,11,,Medical,Contact Allergy of Eyelid,1,,
+100,8348073,"George, Amanda",Moruya,17-04-2017,,34,,Obstetrics & Gyneacology,Second Trimester Bleed,1,,
+101,7902596,"Davis, Riley",Moruya,17-04-2017,,9,,Trauma,Laceration,1,,
+102,8244959,"Andrew, Seth",Moruya,17-04-2017,,2,,Medical,Right Otitis Externa,1,,
+103,8351612,"Clarke-lowe, Mackenzie",Moruya,17-04-2017,,10,,Trauma,Small Laceration,1,,
+104,8351599,"Shiel, Myla",Moruya,17-04-2017,,0.75,,Medical,Nappy Rash,1,,
+105,4787850,"Stephens, Caitlin",Moruya,17-04-2017,,17,,Trauma,Sprained finger,1,,
+106,8328713,"Rolfe, Lachlan",Moruya,17-04-2017,,0.42,,Medical,Normal Testicles,1,,
+107,8328716,"Rolfe, Connor",Moruya,17-04-2017,,0.42,,Medical,Normal Testicles,1,,
+108,8351624,"Kiteley, Brett",Moruya,17-04-2017,,52,,Medical,Cellulitis,1,,
+109,4149345,"Hossack, Denise",Moruya,19-03-2017,,74,,Medical,Transient Global Amnesia,1,,
+110,8260753,"Schell, Tyler",Moruya,19-03-2017,,1.91,,Medical,Small Blister,1,,
+111,8200908,"Phillips, Luke",Moruya,19-03-2017,,24,,Trauma,Foot Metatarsal,1,,
+112,3636830,"Russell, Norman",Moruya,19-03-2017,,58,,Surgical,Diabetic Foot Ulcer,1,,
+113,8286759,"Tyrell, Annabelle",Moruya,19-03-2017,,1.3,,Trauma,Mild Head Injury,1,,
+114,8347725,"Bartlett, Nicole",Moruya,19-03-2017,,59,,Trauma,Dog Bite,1,,
+115,4240885,"Bronwyn, Buckley",Moruya,19-03-2017,,31,,Medical,Acute otitis media,1,,
+116,5275201,"Simpson, Gary",Moruya,19-03-2017,,31,,Surgical,Grade III Internal Hemorrhoid,1,,
+117,8304416,"Kaur, Keerat",Moruya,19-03-2017,,0.92,,Medical,Febrile Episode,1,,
+118,8347819,"Hapi, Micele",Moruya,20-03-2017,,38,,Trauma,Meniscal Tear,1,,
+119,8190320,"Cox, Fay",Moruya,20-03-2017,,90,,Medical,Lyrica Withdrawls,1,,
+120,2221623,"Holden, Max",Moruya,20-03-2017,,67,,Surgical,Subarachnoid Hemorrhage,1,Acomm aneurysm,
+121,8347846,"Conville, Eamon",Moruya,20-03-2017,,4,,Trauma,Laceration,1,,
+122,8143263,"Klower, Tess",Moruya,20-03-2017,,11,,Trauma,Sprained Finger,1,,
+123,4029589,"Sullivan, Kerrie",Moruya,20-03-2017,,62,,Medical,Myofascial Pain Syndrome,1,,
+124,4029589,"Sullivan, Kerrie",Moruya,20-03-2017,,62,,Medical,Myofascial Pain Syndrome,1,,
+125,3969450,"Ellis, Gary",Moruya,20-03-2017,,45,,Medical,Decompensated liver disease,1,,
+126,4205272,"Cottington, Jarrod",Moruya,20-03-2017,,18,,Trauma,Inversion Injury of Ankle,1,,
+127,4144023,"Raabe, Christopher",Moruya,20-03-2017,,32,,Trauma,FOOSH Injury,1,,
+128,4151123,"Rote, Dana",Moruya,20-03-2017,,56,,Trauma,Laceration,1,,
+129,8209526,"De groot, Elizabeth",Moruya,20-03-2017,,59,,Trauma,Ear Bitten off,1,Ear Bitten off by her horse. Small 2cm radius piece found at night by friend,
+130,2530331,"Capel, Peggy",Tamworth,19-01-2017,,91,,Medical,Severe CAP,1,,
+131,2640339,"Jones, Thelma",Tamworth,3-11-2016,,87,,Medical,Heart Failure,1,,
+132,8084636,"Nguyen, Matthew",Bateman's Bay,13-03-2017,,5,,Medical,Febrile Convusion,1,,
+133,1251254,"Van Oosterhout, Josephina",Bateman's Bay,13-03-2017,,91,,Medical,Palliation,1,,
+134,1463698,"Davis, Baeden",Bateman's Bay,13-03-2017,,19,,Medical,Undifferentiated Abdominal Pain,1,,
+135,1508976,"Grant, Deborah",Bateman's Bay,13-03-2017,,44,,Medical,Costochondritis,1,,
+136,1299707,"London, Marietta",Bateman's Bay,13-03-2017,,75,,Medical,Atypical Chest Pain,1,,
+137,82312275,"Britton, Linda",Bateman's Bay,13-03-2017,,30,,Medical,Migraine,1,,
+138,8346924,"Buchanan, Aubrey",Bateman's Bay,13-03-2017,,0.03,,Medical,Reassurance,1,,
+139,1271445,"Ladmore, John",Bateman's Bay,13-03-2017,,72,,Medical,Arrythmia,1,,
+140,8037642,"Putowski, Aniela",Bateman's Bay,13-03-2017,,92,,Medical,Fall,1,,
+141,7974857,"Marsh, Anja",Bateman's Bay,14-03-2017,,9,,Trauma,Mild Head Injury,1,,
+142,8021861,"Bucke, Louise",Bateman's Bay,14-03-2017,,41,,Medical,Low Back Pain,1,,
+143,7981411,"Bonus, Rowdy",Bateman's Bay,14-03-2017,,8,,Toxicology,Spider Bite,1,,
+144,8012325,"Deadman, Stephen",Bateman's Bay,14-03-2017,,67,,Medical,Deranged CK,1,,
+145,1560396,"Burggraaff, Kaitlyn",Bateman's Bay,14-03-2017,,15,,Obstetrics & Gyneacology,Dysmenorrhoea,1,,
+146,1593152,"Henry, Ronald",Bateman's Bay,14-03-2017,,72,,Medical,LRTI,1,,
+147,8235157,"Bush-Blazely, Emmanuel",Bateman's Bay,14-03-2017,,2,,Trauma,Upper Limb Disuse,1,Referred to orthopedics,
+148,4892045,"Renton, Tyrone",Bateman's Bay,14-03-2017,,18,,Trauma,Glass Foreign Body,1,,
+149,8346971,"O'Mahony, Patricia",Bateman's Bay,14-03-2017,,61,,Trauma,Multiple Fractures,1,,
+150,8347540,"Twyford, Emmerson",Moruya,17-03-2017,,0.06,,Medical,Congenital Torticollis,1,,
+151,1459396,"Hollis, Anthony",Moruya,17-03-2017,,43,,Medical,Epilepsy,1,script,
+152,4150270,"Toovey, Aiden",Moruya,17-03-2017,,79,,Medical,Gout,1,,
+153,8347551,"Macey, Lancia",Moruya,17-03-2017,,32,,Medical,Migraine,1,,
+154,1520496,"Evans, Ruth",Moruya,17-03-2017,,59,,Procedure,Difficult Cannulation,1,,
+155,3375149,"Seaman, Brian",Moruya,18-03-2017,,65,,Medical,Tic Disorder,1,,
+156,8281362,"Goodwin, Imogen",Moruya,18-03-2017,,1.41,,Surgical,Constipation,1,,
+157,4052414,"Williams, Lorraine",Moruya,18-03-2017,,88,,Medical,Tramadol Side Effect,1,,
+158,8185841,"Coric, Karlee",Moruya,18-03-2017,,22,,Obstetrics & Gyneacology,Cyst,1,,
+159,1227261,"Thompson, Dorothy",Moruya,18-03-2017,,74,,Surgical,Bowel Obstruction,1,,
+160,4144323,"Hansen, Audrey",Moruya,18-03-2017,,95,,Orthopedic,Fractured Hip,1,Severe dementia,
+161,8299839,"Hawkins, Laura",Bateman's Bay,12-03-2017,,27,,Toxicology,Spider Bite,1,,
+162,8346771,"Proud, Glenn",Bateman's Bay,12-03-2017,,40,,Trauma,Bruised Toe,1,,
+163,8346768,"Kelly, Zara",Bateman's Bay,12-03-2017,,0.83,,Trauma,Bleeding Labial Frenulum,1,,
+164,8346786,"Turner, Eliza",Bateman's Bay,12-03-2017,,11,,Toxicology,Stingray Sting,1,,
+165,8057588,"Oxley, Aaron",Bateman's Bay,12-03-2017,,26,,Medical,Migraine,1,,
+166,8280057,"Walsh, Melvyn",Bateman's Bay,12-03-2017,,29,,Trauma,Oyster Cuts to Feet,1,,
+167,1418707,"Hearne, Lorraine",Bateman's Bay,12-03-2017,,60,,Medical,Migraine,1,Seeking medical certificate,
+168,1567583,"Arnott-Sparks, Shai",Bateman's Bay,12-03-2017,,30,,Medical,Costochondritis,1,,
+169,3108203,"Walsh, Brendan",Bateman's Bay,12-03-2017,,19,,Trauma,Crush injury to hand,1,,
+170,8346798,"Medina, Anuar",Bateman's Bay,12-03-2017,,39,,Trauma,Near-Drowning,1,Airlifted to canberra.,
+171,8262718,"Galambos, Blair",Bateman's Bay,12-03-2017,,1.91,,Trauma,Mild Head Injury,1,,
+172,7933288,"Buck, Matilda",Bateman's Bay,12-03-2017,,9,,Trauma,Ankle Injury,1,,
+173,5258187,"Lory-Smailes, Jacob",Bateman's Bay,12-03-2017,,12,,Trauma,Near-Drowning,1,,
+174,8346800,"Medina, Freja",Bateman's Bay,12-03-2017,,9,,Trauma,Near-Drowning,1,,
+175,8151193,"Medina, Francis",Bateman's Bay,12-03-2017,,11,,Trauma,Near-Drowning,1,,
+176,8346801,"Medina, Francesca",Bateman's Bay,12-03-2017,,13,,Trauma,Near-drowning,1,,
+177,1252307,"Elphick, Gerald",Bateman's Bay,12-03-2017,,77,,Medical,Postural Hypotension,1,,
+178,8045871,"Haberland, Cameira",Bateman's Bay,12-03-2017,,6,,Trauma,Thumb Sprain,1,,
+179,5407463,"Hannan, Claudia",Bateman's Bay,12-03-2017,,11,,Trauma,Chin laceration,1,,
+180,8346807,"Lyytikainen, Ella",Bateman's Bay,12-03-2017,,21,,Opthalmology,Foreign Body in Eye,1,,
+181,8184714,"Rowland, Ellie",Bateman's Bay,12-03-2017,,3,,Medical,Viral Gastroenteritis,1,,
+182,8295507,"Mclean, Geoffrey",Bateman's Bay,12-03-2017,,66,,Medical,Dry Nose from Home O2,1,,
+183,1235896,"Collins, Kenneth",Bateman's Bay,12-03-2017,,83,,Medical,Undifferentiated Presentation,1,Gouty arthritis vs septic joint vs sepsis,
+184,8103950,"Spackman, Jake",Bateman's Bay,12-03-2017,,13,,Orthopedic,FOOSH injury,1,,
+185,8346523,"Hamilton, Savanna",Bateman's Bay,10-03-2017,,6,,Medical,Viral Gastroenteritis,1,,
+186,8217992,"Chandra, Flora",Bateman's Bay,10-03-2017,,33,,Obstetrics & Gyneacology,Post-partum Endometritis,1,,
+187,1235565,"Hulm, Neville",Bateman's Bay,10-03-2017,,76,,Medical,Acute Coronary Syndrome,1,,
+188,1582434,"Woodhouse, Bree",Bateman's Bay,10-03-2017,,14,,Psychiatry,Depression,1,,
+189,4238461,"Allen, Julia",Bateman's Bay,11-03-2017,,45,,Medical,Undifferentiated Vomiting & Pain,1,,
+190,8327332,"Pitt, Chevelle",Bateman's Bay,11-03-2017,,7,,Medical,Viral Gastroenteritis,1,,
+191,8296567,"Morgan, Clelia",Bateman's Bay,11-03-2017,,16,,Psychiatry,Depression & Anxiety,1,,
+192,8104357,"Palich, Robert",Bateman's Bay,11-03-2017,,79,,Trauma,Bleeding Varicose Vein,1,,
+193,8151189,"Lancaster, Marie-christine",Bateman's Bay,11-03-2017,,65,,Medical,Sepsis,1,,
+194,1413472,"Ford, Margaret",Bateman's Bay,11-03-2017,,75,,Surgical,Pancreatitis,1,,
+195,1627927,"Barnes, Joel",Bateman's Bay,9-03-2017,,13,,Trauma,Closed Fist Injury,1,,
+196,5420543,"Bruce, Darcy",Bateman's Bay,9-03-2017,,16,,Trauma,Laceration to foot,1,,
+197,8346395,"Holt, Laila",Bateman's Bay,9-03-2017,,8,,Toxicology,Blue Bottle Sting,1,,
+198,7891794,"Hanley, Thomas",Bateman's Bay,9-03-2017,,64,,Opthalmology,Eye Burn,1,,
+199,4209543,"Booth, Elsie",Bateman's Bay,9-03-2017,,88,,Medical,Falls,1,,
+200,8040840,"Johnston, Michael",Bateman's Bay,9-03-2017,,16,,Trauma,Laceration,1,,
+201,8273190,"Lonie, Allan",Bateman's Bay,9-03-2017,,76,,Medical,Exacerbation of COAD,1,,
+202,8171890,"Forrest, Millie",Bateman's Bay,9-03-2017,,4,,Medical,UTI,1,,
+203,7971768,"Nerhus, Linda",Bateman's Bay,9-03-2017,,58,,Medical,Low Back Pain,1,,
+204,7999938,"McLaren, Matilda",Moruya,8-03-2017,,7,,Medical,Hematemesis,1,,
+205,5277612,"Bye, Madelaine",Moruya,8-03-2017,,22,,Medical,Pyelonephritis,1,,
+206,8318837,"Freeman, Natasha",Moruya,8-03-2017,,36,,Obstetrics & Gyneacology,Endometritis,1,,
+207,4178232,"Dove, Jayden",Moruya,8-03-2017,,22,,Medical,New Type 1 Diabetes,1,,
+208,8285331,"Barbara, Jye",Moruya,8-03-2017,,1.33,,Medical,Acute Bronchiolitis,1,T/f to Goldbourne,
+209,8302349,"Walker, Tomas",Moruya,8-03-2017,,1.83,,Orthopedic,Transient Synovitis,1,,
+210,7999938,"McLaren, Matilda",Moruya,8-03-2017,,7,,Medical,Hematemesis,1,,
+211,4231776,"McFaul, Josephine",Moruya,26-02-2017,,80,,Trauma,Rib Fracture,1,,
+212,7791455,"Gill, Donna",Moruya,26-02-2017,,48,,Medical,Myofascial Pain Syndrome of QL,1,,
+213,1350330,"McCarron, Sonia",Moruya,26-02-2017,,45,,Toxicology,Escitalopram Overdose,1,,
+214,8305330,"Coxon, Heather",Moruya,26-02-2017,,61,,Medical,Myofascial Pain Syndrome of Peroneal Muscles,1,,
+215,1206063,"Jackson, David",Moruya,26-02-2017,,49,,Surgical,Epistaxis,1,,
+216,1174829,"Brierley, Denine",Moruya,26-02-2017,,41,,Medical,GORD,1,Losing house to corrupt council,
+217,4003825,"Rotumah, Damien",Moruya,26-02-2017,,39,,Toxicology,Redback Spider Bite,1,,
+218,1222303,"Reid, Eric",Moruya,26-02-2017,,79,,Medical,UTI,1,Delerium,
+219,8167724,"Bugden, Joshua",Moruya,26-02-2017,,4,,Trauma,Facial Laceration,1,,
+220,8020088,"Coady, Geraldine",Moruya,26-02-2017,,60,,Medical,UTI,1,,
+221,4200283,"Kelleher, Daryl",Moruya,26-02-2017,,61,,Medical,Exacerbation of COPD,1,,
+222,1350330,"McCarron, Sonia",Moruya,25-02-2017,,45,,Medical,Low Back Pain,1,,
+223,2215827,"Chandler, Renee",Moruya,25-02-2017,,33,,Trauma,Maxillary Bruise,1,12kg box of sausages fell on her face,
+224,8298677,"Jorgensen, Patricia",Moruya,25-02-2017,,71,,Medical,Depression,1,,
+225,8216215,"Whitney, Spencer",Moruya,25-02-2017,,48,,Surgical,Superficial Laceration,1,,
+226,5348218,"James, Veronica",Moruya,25-02-2017,,68,,Medical,Shingles,1,,
+227,8344877,"North, Glenn",Moruya,25-02-2017,,51,,Trauma,Ankle Fracture,1,Weber A,
+228,2052336,"Tyrrell, Rebecca",Moruya,26-02-2017,,21,,Medical,Contact Dermatitis,1,Eye Irritation,
+229,8344906,"Martin, Peter",Moruya,25-02-2017,,81,,Medical,Pulmonary Embolus,1,,
+230,2572494,"Turner, Peter",Moruya,26-02-2017,,21,,Trauma,Musculoskeletal Pain Disorder,1,,
+231,8224296,"Staunton, Alex",Moruya,24-02-2017,,2,,Medical,Cardiac Arrythmia,1,Premature Atrial Complexes - benign,
+232,4131765,"Furnell, Tracey",Moruya,24-02-2017,,55,,Medical,Viral URTI,1,Seeking medical certificat,
+233,8344742,"Foster, Leonard",Moruya,24-02-2017,,84,,Trauma,Fall,1,Tripped over a tent peg,
+234,3974674,"Staunton, Julieanne",Moruya,24-02-2017,,45,,Surgical,Renal Stone,1,5mm,
+235,8027495,"Dare, Reginald",Moruya,24-02-2017,,49,,Orthopedic,Triquetrum Avulsion Fracture,1,,
+236,1585647,"Kachyckyj, Philippa",Moruya,24-02-2017,,54,,Medical,Community Acquired Pneumonia,1,,
+237,4911098,"Hartog, Glenn",Moruya,24-02-2017,,59,,Trauma,Mild Traumatic Brain Injury,1,"Slipped backwards on boat ramp in Narooma, LOC <10seconds",
+238,8344818,"Pirie, Leila",Moruya,24-02-2017,,0.83,,Medical,Viral Gastroenteritis,1,Granddaughter of receptionist,
+239,7951574,"Young, Margaret",Moruya,20-02-2017,,59,,Medical,Acute Low Back Pain,1,,
+240,8274870,"Robinson, Lillian",Bateman's Bay,23-02-2017,,29,,Surgical,Pancreatitis,1,,
+241,5431707,"De thierry absolum, Tui",Bateman's Bay,23-02-2017,,20,,Obstetrics & Gyneacology,Endometritis,1,2 weeks post-partum PV bleed,
+242,1150987,"Chatfield, Rodney",Bateman's Bay,22-02-2017,,59,,Trauma,Crush injury to foot,1,,
+243,8232766,"Holloway, Kelly",Bateman's Bay,22-02-2017,,43,,Medical,Atypical Chest Pain,1,,
+244,8087445,"Tyler, Jonah",Bateman's Bay,23-02-2017,,5,,Trauma,Small Laceration to Chin,1,,
+245,8344661,"Hansen, Michael",Bateman's Bay,23-02-2017,,26,,Surgical,Surgical Wound Infection,1,,
+246,7841794,"Mcauley, Tara",Bateman's Bay,23-02-2017,,12,,Orthopedic,Left Knee Non-displaced Tibial Plateau Fracture,1,,
+247,8053027,"Haymen, Marjory",Bateman's Bay,23-02-2017,,94,,Trauma,Fractured Ribs,1,admitted for pain relief,
+248,1312372,"Shepheard, Joan",Bateman's Bay,23-02-2017,,76,,Medical,Gluteus Trigger Point,1,,
+249,8344685,"Busuttil, Leonard",Bateman's Bay,23-02-2017,,72,,Surgical,Acute Cholecystitis,1,,
+250,1360707,"Buckley, Denis",Bateman's Bay,22-02-2017,,70,,Surgical,Low Grade Bowel Obstruction,1,,
+251,7978984,"Connolly, James",Bateman's Bay,22-02-2017,,65,,Medical,Heart Failure,1,Past history of cardiomyopathy,
+252,1360707,"Buckley, Denis",Bateman's Bay,22-02-2017,,70,,Surgical,Pseudo-obstruction,1,,
+253,8196695,"McCloskey, Archie",Bateman's Bay,22-02-2017,,4,,Pediatric,Exacerbation of Asthma,1,,
+254,8232766,"Holloway, Kelly",Bateman's Bay,22-02-2017,,43,,Medical,Migraine,1,,
+255,1150987,"Chatfield, Rodney",Bateman's Bay,22-02-2017,,59,,Orthopedic,Crush Injury to Foot,1,Dropped bed rail on foot,
+256,1619290,"Hannah, Alexandria",Bateman's Bay,21-02-2017,,16,,Pediatric,Viral URTI,1,,
+257,8016018,"Croft, Colin",Bateman's Bay,21-02-2017,,58,,Orthopedic,Ankle Sprain,1,Dropped stump of wood on foot,
+258,1845150,"Clark, Beverly",Moruya,20-02-2017,,67,,Trauma,MVA,1,100km/hr velocity,
+259,1634689,"Ball, Elizabeth",Moruya,20-02-2017,,81,,Medical,Depression,1,,
+260,8305813,"Mark, Jacinda",Moruya,20-02-2017,,32,,Orthopedic,Radial Head Fracture,1,,
+261,4197941,"Jones, Andrew",Moruya,20-02-2017,,18,,Pediatric,Viral Illness,1,,
+262,7975141,"Kay, Finnley",Moruya,20-02-2017,,8,,Pediatric,Inversion Injury of Ankle,1,Horse grazed foot,
+263,4901810,"Darroch, Pryce",Moruya,20-02-2017,,51,,Orthopedic,Wrist Sprain,1,Suspected Scaphoid Fracture initially,
+264,8173956,"Kearney, Gillian",Moruya,20-02-2017,,55,,Orthopedic,4th Metatarsal fracture,1,,
+265,5217247,"Jenkins, James",Moruya,20-02-2017,,48,,Medical,Cellulitis,1,Simple Cellulitis post-blue bottle sting,
+266,2530331,"Capel, Peggy",Tamworth,19-01-2017,,90,,Procedure,Pneumothorax,1,,
+267,2640339,"Jones, Thelma",Tamworth,3-11-2016,,86,,Procedure,Pleural Effusion,1,,
+268,2159667,"Hine, Joann",Moruya,19-02-2017,,42,,Orthopedic,Closed fracture of 5th proximal phalanx of toe,1,Distraction and closed fracture reduction,
+269,4100098,"Rae, James",Moruya,19-02-2017,,33,,Surgical,Pneumothorax,1,Left-Sided Pneumothorax,
+270,1483661,"Blackmore, Kate",Moruya,19-02-2017,,18,,Pediatric,Nausea & Vomiting,1,,
+271,4007762,"Bailey, Robert",PMCC,2018-08-20,1963-11-07,54,1,Palliative Care,Metastatic Cancer,2,,3500
+272,1047832,"Moravski, Peter",PMCC,2018-08-20,1937-08-22,80,1,Palliative Care,Metastatic Cancer,2,,3043
+273,3015927,"Brown, Andrew",PMCC,2018-08-21,1956-07-06,61,1,Palliative Care,Metastatic Cancer,2,,3055
+274,1228127,"Raczynski, Vicki",PMCC,2018-08-21,1947-09-21,70,2,Palliative Care,Metastatic Cancer,2,,3046
+275,4071690,"Yalcin, Gulerman",PMCC,2018-08-21,1960-02-01,58,2,Palliative Care,Metastatic Cancer,2,,3047
+276,3010576,"Daly, Tara",PMCC,2018-08-22,1976-02-20,42,2,Palliative Care,Metastatic Cancer,2,,3338
+277,3025942,"George, Thomas",PMCC,2018-08-22,1967-06-22,51,1,Palliative Care,Metastatic Cancer,2,,3193
+278,8108752,"Nicoll, Margaret",PMCC,2018-08-22,1938-10-10,79,2,Palliative Care,Metastatic Cancer,2,,3054
+279,4045766,"McDonald, Kate",PMCC,2018-08-27,1984-05-10,34,2,Palliative Care,Metastatic Cancer,2,,3032
+280,4007762,"Bailey, Robert",PMCC,2018-08-28,1963-11-07,54,1,Palliative Care,Metastatic Cancer,2,,3500
+281,3000912,"Johnstone, Bruce",PMCC,2018-08-28,1946-11-09,71,1,Palliative Care,Metastatic Cancer,2,,3860
+282,3007646,"Gordon, Nicholas",PMCC,2018-08-29,1988-12-22,29,1,Palliative Care,Metastatic Cancer,2,,3941
+283,4020135,"Prestia, Giovanni",PMCC,2018-08-29,1938-07-09,79,1,Palliative Care,Metastatic Cancer,2,,3038
+284,3043940,"Harper, Linda",PMCC,2018-08-30,1957-11-13,60,2,Palliative Care,Metastatic Cancer,2,,3070
+285,518371,"Ho, Si Ping",PMCC,2018-08-30,1941-12-23,76,1,Palliative Care,Metastatic Cancer,2,,3051
+286,3000912,"Johnstone, Bruce",PMCC,2018-08-30,1946-11-09,71,1,Palliative Care,Metastatic Cancer,2,,3860
+287,3043468,"Murphy, Margaret",PMCC,2018-08-30,1927-01-20,91,2,Palliative Care,Metastatic Cancer,2,,3150
+288,3028066,"Wood-Davies, Virginia",PMCC,2018-08-30,1954-08-02,63,2,Palliative Care,Metastatic Cancer,2,,3000
+289,3000567,"Campbell, Troy",PMCC,2018-08-31,1964-11-01,53,1,Palliative Care,Metastatic Cancer,2,,3051
+290,1052295,"Cooke, Martin",PMCC,2018-08-31,1963-05-15,55,1,Palliative Care,Metastatic Cancer,2,,3058
+291,4022729,"Elliott, Jane",PMCC,2018-08-31,1983-10-07,34,2,Palliative Care,Metastatic Cancer,2,,3003
+292,3022453,"Johnston, Barbara",PMCC,2018-09-05,1940-12-07,77,2,Palliative Care,Metastatic Cancer,2,,3139
+293,3026511,"Kane, Angela",PMCC,2018-09-05,1968-10-08,49,2,Palliative Care,Metastatic Cancer,2,,3429
+294,778781,"Witton, Dale",PMCC,2018-09-05,1949-10-21,68,2,Palliative Care,Metastatic Cancer,2,,3207
+295,8016298,"Cross, Shelley",PMCC,2018-09-06,1969-12-20,48,2,Palliative Care,Metastatic Cancer,2,,3051
+296,962129,"Galea, Antonia",PMCC,2018-09-06,1951-01-07,67,2,Palliative Care,Metastatic Cancer,2,,3020
+297,3020863,"Burns, Helen",PMCC,2018-09-10,1938-10-03,79,2,Palliative Care,Metastatic Cancer,2,,3163
+298,1361066,"Caruso, Giuseppe",PMCC,2018-09-10,1946-09-07,71,1,Palliative Care,Metastatic Cancer,2,,3059
+299,984132,"Fox, Murray",PMCC,2018-09-11,1946-10-04,71,1,Palliative Care,Metastatic Cancer,2,,3043
+300,3041902,"Truong, Dat",PMCC,2018-09-11,1955-06-06,63,1,Palliative Care,Metastatic Cancer,2,,3038
+301,4028666,"Valenzuela, Jenny",PMCC,2018-09-12,1965-04-16,53,2,Palliative Care,Metastatic Cancer,2,,3037
+302,3018584,"Cherry, Robert",PMCC,2018-09-13,1951-08-19,66,1,Palliative Care,Metastatic Cancer,2,,3030
+303,8016298,"Cross, Shelley",PMCC,2018-09-13,1969-12-20,48,2,Palliative Care,Metastatic Cancer,2,,3051
+304,3025351,"Temme, Desmond",PMCC,2018-09-13,1935-07-29,82,1,Palliative Care,Metastatic Cancer,2,,3138
+305,3028066,"Wood-Davies, Virginia",PMCC,2018-09-13,1954-08-02,63,2,Palliative Care,Metastatic Cancer,2,,3000
+306,3025470,"Conway, Timothy",PMCC,2018-09-14,1968-11-14,49,1,Palliative Care,Metastatic Cancer,2,,3516
+307,871761,"Gedid, Said",PMCC,2018-09-14,1948-12-25,69,1,Palliative Care,Metastatic Cancer,2,,3047
+308,3021403,"Potter, Robert",PMCC,2018-09-14,1949-07-16,68,1,Palliative Care,Metastatic Cancer,2,,3936
+309,3041889,"Kavanagh, Owen",PMCC,2018-09-17,1949-07-05,68,1,Palliative Care,Metastatic Cancer,2,,3434
+310,2018828,"Radywonik, Victor",PMCC,2018-09-18,1952-10-04,65,1,Palliative Care,Metastatic Cancer,2,,3032
+311,3019957,"Scott-Palframan, Reigan",PMCC,2018-09-18,1951-08-23,66,2,Palliative Care,Metastatic Cancer,2,,3840
+312,3039755,"Hoffman, Raymond",PMCC,2018-09-24,1951-08-07,66,1,Palliative Care,Metastatic Cancer,2,,3825
+313,4045766,"McDonald, Kate",PMCC,2018-09-24,1984-05-10,34,2,Palliative Care,Metastatic Cancer,2,,3032
+314,627515,"Rob, Giuseppe",PMCC,2018-09-25,1931-11-15,86,1,Palliative Care,Metastatic Cancer,2,,3042
+315,726906,"Vella, Joseph",PMCC,2018-09-25,1951-01-08,67,1,Palliative Care,Metastatic Cancer,2,,3043
+316,3020863,"Burns, Helen",PMCC,2018-09-26,1938-10-03,79,2,Palliative Care,Metastatic Cancer,2,,3163
+317,1282615,"Jablko, Abraham",PMCC,2018-09-26,1945-07-17,72,1,Palliative Care,Metastatic Cancer,2,,3142
+318,2279724,"Kalaitzis, Stavros",PMCC,2018-09-26,1950-09-11,67,1,Palliative Care,Metastatic Cancer,2,,3064
+319,4020135,"Prestia, Giovanni",PMCC,2018-09-26,1938-07-09,79,1,Palliative Care,Metastatic Cancer,2,,3038
+320,1021216,"Cantaro, Virginia",PMCC,2018-09-27,1959-09-04,58,2,Palliative Care,Metastatic Cancer,2,,3034
+321,3014157,"Pasnin, Chris",PMCC,2018-09-27,1976-10-11,41,1,Palliative Care,Metastatic Cancer,2,,3182
+322,1139735,"Rohde, Peter",PMCC,2018-09-27,1950-10-04,67,1,Palliative Care,Metastatic Cancer,2,,3585
+323,2261872,"Weerasinghe, Jayanthi",PMCC,2018-09-27,1956-05-23,62,2,Palliative Care,Metastatic Cancer,2,,3029
+324,3028066,"Wood-Davies, Virginia",PMCC,2018-09-27,1954-08-02,63,2,Palliative Care,Metastatic Cancer,2,,3000
+325,748179,"Chester, Rosemary",PMCC,2018-10-01,1958-11-23,59,2,Palliative Care,Metastatic Cancer,2,,3714
+326,3012007,"Dove, Barry",PMCC,2018-10-01,1943-04-19,75,1,Palliative Care,Metastatic Cancer,2,,3722
+327,2018828,"Radywonik, Victor",PMCC,2018-10-01,1952-10-04,65,1,Palliative Care,Metastatic Cancer,2,,3032
+328,726906,"Vella, Joseph",PMCC,2018-10-02,1951-01-08,67,1,Palliative Care,Metastatic Cancer,2,,3043
+329,3046317,"Baljak, Marko",PMCC,2018-10-03,1981-04-03,37,1,Palliative Care,Metastatic Cancer,2,,3040
+330,3022594,"Mazzeo, Giovanni",PMCC,2018-10-03,1939-09-28,78,1,Palliative Care,Metastatic Cancer,2,,3206
+331,3035241,"Wood, Brett",PMCC,2018-10-03,1966-09-25,51,1,Palliative Care,Metastatic Cancer,2,,7307
+332,8016298,"Cross, Shelley",PMCC,2018-10-04,1969-12-20,48,2,Palliative Care,Metastatic Cancer,2,,3051
+333,3009220,"Johnson, Rodney",PMCC,2018-10-04,1961-07-15,56,1,Palliative Care,Metastatic Cancer,2,,3029
+334,4082361,"Payne, Margaret",PMCC,2018-10-04,1937-09-17,80,2,Palliative Care,Metastatic Cancer,2,,3042
+335,1321543,"Walker, Arran",PMCC,2018-10-04,1982-12-21,35,1,Palliative Care,Metastatic Cancer,2,,3930
+336,1090774,"Hoult, Carolyn",PMCC,2018-10-05,1958-10-04,59,2,Palliative Care,Metastatic Cancer,2,,3442
+337,3042108,"Roberts, Kay",PMCC,2018-10-05,1946-12-09,71,2,Palliative Care,Metastatic Cancer,2,,3960
+338,4045766,"McDonald, Kate",PMCC,2018-10-08,1984-05-10,34,2,Palliative Care,Metastatic Cancer,2,,3032
+339,3046317,"Baljak, Marko",PMCC,2018-10-09,1981-04-03,37,1,Palliative Care,Metastatic Cancer,2,,3040
+340,3021811,"Daly, Andrea",PMCC,2018-10-09,1971-12-07,46,2,Palliative Care,Metastatic Cancer,2,,3011
+341,3047446,"Gasparroni, Pasquilino",PMCC,2018-10-09,1957-06-23,61,1,Palliative Care,Metastatic Cancer,2,,3006
+342,8107546,"McInerney, Cheryl",PMCC,2018-10-10,1958-07-19,59,2,Palliative Care,Metastatic Cancer,2,,3802
+343,3043940,"Harper, Linda",PMCC,2018-10-11,1957-11-13,60,2,Palliative Care,Metastatic Cancer,2,,3070
+344,1158747,"Lazarevska, Blaga",PMCC,2018-10-11,1931-06-19,87,2,Palliative Care,Metastatic Cancer,2,,3123
+345,2255808,"Portokallis, Andrew",PMCC,2018-10-11,1958-12-07,59,1,Palliative Care,Metastatic Cancer,2,,3065
+346,1139735,"Rohde, Peter",PMCC,2018-10-11,1950-10-04,67,1,Palliative Care,Metastatic Cancer,2,,3585
+347,3027799,"Skrypnyk, Inna",PMCC,2018-10-11,1950-02-10,68,2,Palliative Care,Metastatic Cancer,2,,3188
+348,490089,"Baird, Jeanna",PMCC,2018-10-12,1955-03-31,63,2,Palliative Care,Metastatic Cancer,2,,3037
+349,3022115,"Carter, David",PMCC,2018-10-12,1950-12-14,67,1,Palliative Care,Metastatic Cancer,2,,3357
+350,3035512,Ellem Miss Moya,PMCC,2018-10-12,1978-08-18,39,2,Palliative Care,Metastatic Cancer,2,,3057
+351,1090774,"Hoult, Carolyn",PMCC,2018-10-12,1958-10-04,59,2,Palliative Care,Metastatic Cancer,2,,3442
+352,1361066,"Caruso, Giuseppe",PMCC,2018-10-15,1946-09-07,71,1,Palliative Care,Metastatic Cancer,2,,3059
+353,3041889,"Kavanagh, Owen",PMCC,2018-10-15,1949-07-05,68,1,Palliative Care,Metastatic Cancer,2,,3434
+354,1052295,"Cooke, Martin",PMCC,2018-10-16,1963-05-15,55,1,Palliative Care,Metastatic Cancer,2,,3058
+355,3047446,"Gasparroni, Pasquilino",PMCC,2018-10-16,1957-06-23,61,1,Palliative Care,Metastatic Cancer,2,,3006
+356,2309606,"Livingston, Barbara",PMCC,2018-10-16,1942-06-13,76,2,Palliative Care,Metastatic Cancer,2,,3116
+357,2255808,"Portokallis, Andrew",PMCC,2018-10-17,1958-12-07,59,1,Palliative Care,Metastatic Cancer,2,,3065
+358,726906,"Vella, Joseph",PMCC,2018-10-17,1951-01-08,67,1,Palliative Care,Metastatic Cancer,2,,3043
+359,3031042,"Watterston, Susanna",PMCC,2018-10-17,1972-01-23,46,2,Palliative Care,Metastatic Cancer,2,,3166
+360,962129,"Galea, Antonia",PMCC,2018-10-18,1951-01-07,67,2,Palliative Care,Metastatic Cancer,2,,3020
+361,1282615,"Jablko, Abraham",PMCC,2018-10-18,1945-07-17,72,1,Palliative Care,Metastatic Cancer,2,,3142
+362,3014157,"Pasnin, Chris",PMCC,2018-10-18,1976-10-11,41,1,Palliative Care,Metastatic Cancer,2,,3182
+363,1321543,"Walker, Arran",PMCC,2018-10-18,1982-12-21,35,1,Palliative Care,Metastatic Cancer,2,,3930
+364,3004770,"Dudley, Sean",PMCC,2018-10-19,1977-07-21,40,1,Palliative Care,Metastatic Cancer,2,,3114
+365,3039755,"Hoffman, Raymond",PMCC,2018-10-22,1951-08-07,66,1,Palliative Care,Metastatic Cancer,2,,3825
+366,1090774,"Hoult, Carolyn",PMCC,2018-10-22,1958-10-04,59,2,Palliative Care,Metastatic Cancer,2,,3442
+367,3043940,"Harper, Linda",PMCC,2018-10-25,1957-11-13,60,2,Palliative Care,Metastatic Cancer,2,,3070
+368,1090774,"Hoult, Carolyn",PMCC,2018-10-25,1958-10-04,59,2,Palliative Care,Metastatic Cancer,2,,3442
+369,2255808,"Portokallis, Andrew",PMCC,2018-10-25,1958-12-07,59,1,Palliative Care,Metastatic Cancer,2,,3065
+370,2261872,"Weerasinghe, Jayanthi",PMCC,2018-10-25,1956-05-23,62,2,Palliative Care,Metastatic Cancer,2,,3029
+371,1281148,"Ke, Yan",PMCC,2018-10-26,1967-02-12,51,2,Palliative Care,Metastatic Cancer,2,,3073
+372,4045766,"McDonald, Kate",PMCC,2018-10-26,1984-05-10,34,2,Palliative Care,Metastatic Cancer,2,,3032
+373,3013092,"Mullens, Christopher",PMCC,2018-10-26,1972-06-29,46,1,Palliative Care,Metastatic Cancer,2,,3109
+374,3004218,"McLean, Dennis",PMCC,2018-10-29,1951-03-31,67,1,Palliative Care,Metastatic Cancer,2,,3046
+375,2007002,"Sim, Timothy",PMCC,2018-10-29,1975-12-10,42,1,Palliative Care,Metastatic Cancer,2,,3166
+376,3045503,"Yang, Se Jung",PMCC,2018-10-29,1939-01-21,79,2,Palliative Care,Metastatic Cancer,2,,3101
+377,1211335,"Munro, Nicholas",PMCC,2018-10-30,1987-02-18,31,1,Palliative Care,Metastatic Cancer,2,,3338
+378,3020529,"Au, Christina",PMCC,2018-10-31,1949-01-21,69,2,Palliative Care,Metastatic Cancer,2,,3104
+379,3026517,"Ayoubi, Gillian",PMCC,2018-10-31,1956-04-17,62,2,Palliative Care,Metastatic Cancer,2,,3043
+380,2279724,"Kalaitzis, Stavros",PMCC,2018-10-31,1950-09-11,67,1,Palliative Care,Metastatic Cancer,2,,3064
