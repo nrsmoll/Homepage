@@ -23,6 +23,10 @@
                 <td> {{ num_medical }}</td>
             </tr>
             <tr>
+                <td><p class="text-left">Pediatric</p></td>
+                <td> {{ num_pediatric }}</td>
+            </tr>
+            <tr>
                 <td><p class="text-left">Obstetrics and Gynaecology</p></td>
                 <td> {{ num_og }} </td>
             </tr>
@@ -31,8 +35,8 @@
                 <td> {{ num_trauma }} </td>
             </tr>
             <tr>
-                <td><p class="text-left">Anesthetics</p></td>
-                <td> {{ num_anesthetics }} </td>
+                <td><p class="text-left">Burns</p></td>
+                <td> {{ num_burns }} </td>
             </tr>
             <tr>
                 <td><p class="text-left">Palliative Care</p></td>
@@ -45,7 +49,34 @@
 
     <h2>Procedures</h2>
     <p><strong>Total Procedures:</strong> {{ num_procedures }}</p>
-
+    <div style="width:300px;">
+        <table class="table table-sm">
+            <thead class="thead-dark">
+            <tr>
+                <th style="width: 80.00%"><p class="text-left">Type of Procedure</p></th>
+                <th style="width: 20.00%"><p class="text-left">Count</p></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><p class="text-left">Diagnostic</p></td>
+                <td> {{ num_diagnostic }}</td>
+            </tr>
+            <tr>
+                <td><p class="text-left">Therapeutic</p></td>
+                <td> {{ num_therapeutic }} </td>
+            </tr>
+            <tr>
+                <td><p class="text-left">Vascular Access</p></td>
+                <td> {{ num_vascularaccess }} </td>
+            </tr>
+            <tr>
+                <td><p class="text-left">Anesthesia</p></td>
+                <td> {{ num_anesthesia }} </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 
 
 {% endblock %}

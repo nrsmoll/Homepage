@@ -1,0 +1,274 @@
+from tkinter import *
+
+win = Tk()
+
+
+Q1list = [
+        ("I can do all these tasks very quickly and efficiently without any help", 1),
+        ("I can do these tasks relatively easily without help", 2),
+        ("I can do these tasks only very slowly without help", 3),
+        ("I cannot do most of these tasks unless I have help", 4),
+        ("I can do none of these tasks by myself.", 5),
+    ]
+Label(win, text="Q1. How much help do you need with jobs around your place of residence (eg preparing food, cleaning, gardening)?", justify = LEFT, wraplength=500 ).grid(row=3, columnspan=2)
+q1 = IntVar()
+for text, value in Q1list:
+    b = Radiobutton(win, text=text, variable=q1, value=value)
+    b.grid(sticky='W', rowspan=5, columnspan=2)
+
+
+Q2list = [
+        ("getting around is enjoyable and easy", 1),
+        ("I have no difficulty getting around outside my place of residence", 2),
+        ("I have a little difficulty", 3),
+        ("I have moderate difficulty", 4),
+        ("I have a lot of difficulty", 5),
+        ("I cannot get around unless somebody is there to help me.", 6)
+    ]
+Label(win, text="Q2. How easy or difficult is it for you to get around by yourself outside your place of residence (eg to go shopping, visiting)?", justify = LEFT, wraplength=500 ).grid(rowspan=2, columnspan=2)
+q2 = IntVar()
+for text, value in Q2list:
+    b = Radiobutton(win, text=text, variable=q2, value=value)
+    b.grid(sticky='W', rowspan=6, columnspan=2)
+
+Q3list = [
+        ("I am very mobile", 1),
+        ("I have no difficulty with mobility", 2),
+        ("I have some difficulty with mobility (for example, going uphill)", 3),
+        ("I have difficulty with mobility. I can go short distances only.", 4),
+        ("I have a lot of difficulty with mobility. I need someone to help me.", 5),
+        ("I am bedridden.", 6)
+    ]
+Label(win, text="Q3 How easy or difficult is it for you to move around (using any aids or equipment you need eg a wheelchair, frame or stick)?", justify = LEFT, wraplength=500 ).grid(rowspan=2, columnspan=2)
+q3 = IntVar()
+for text, value in Q3list:
+    b = Radiobutton(win, text=text, variable=q3, value=value)
+    b.grid(sticky='W', rowspan=6, columnspan=2)
+
+Q4list = [
+        ("these tasks are very easy for me", 1),
+        ("I have no real difficulty in carrying out these tasks", 2),
+        ("I find some of these tasks difficult, but I manage to do them on my own", 3),
+        ("many of these tasks are difficult, and I need help to do them", 4),
+        ("I cannot do these tasks by myself at all.", 5)
+    ]
+Label(win, text="Q4 How difficult is it for you to wash, toilet, dress yourself, eat or care for your appearance?", justify = LEFT, wraplength=500 ).grid(rowspan=2, columnspan=2)
+q4 = IntVar()
+for text, value in Q4list:
+    b = Radiobutton(win, text=text, variable=q4, value=value)
+    b.grid(sticky='W', rowspan=6, columnspan=2)
+
+Q5list = [
+        ("very happy", 1),
+        ("generally happy", 2),
+        ("neither happy nor unhappy", 3),
+        ("generally unhappy", 4),
+        ("I have a lot of difficulty", 5),
+        ("very unhappy", 6)
+    ]
+Label(win, text="Q5 How happy are you with your close and intimate relationships?", justify = LEFT, wraplength=500 ).grid(rowspan=2, columnspan=2)
+q5 = IntVar()
+for text, value in Q5list:
+    b = Radiobutton(win, text=text, variable=q5, value=value)
+    b.grid(sticky='W', rowspan=6, columnspan=2)
+
+Q6list = [
+        ("my role in the family is unaffected by my health", 1),
+        ("there are some parts of my family role I cannot carry out", 2),
+        ("there are many parts of my family role I cannot carry out", 3),
+        ("I cannot carry out any part of my family role.", 4)
+    ]
+Label(win, text="Q6 Does your health affect your relationship with your family?", justify = LEFT, wraplength=500 ).grid(rowspan=2, columnspan=2)
+q6 = IntVar()
+for text, value in Q6list:
+    b = Radiobutton(win, text=text, variable=q6, value=value)
+    b.grid(sticky='W', rowspan=6, columnspan=2)
+
+###p2###
+
+Q7list = [
+        ("my role in the community is unaffected by my health", 1),
+        ("there are some parts of my community role I cannot carry out", 2),
+        ("there are many parts of my community role I cannot carry out", 3),
+        ("I cannot carry out any part of my community role.", 4)
+    ]
+Label(win, text="Q7 Does your health affect your role in your community (eg residential, sporting, church or cultural groups)?", justify = LEFT, wraplength=500 ).grid(row=3, columnspan=2)
+q7 = IntVar()
+for text, value in Q7list:
+    b = Radiobutton(win, text=text, variable=q7, value=value)
+    b.grid(sticky='W', rowspan=5, columnspan=2)
+
+
+Q8list = [
+        ("never", 1),
+        ("occasionally", 2),
+        ("sometimes", 3),
+        ("often", 4),
+        ("all the time.", 5)
+    ]
+Label(win, text="Q8 How often did you feel in despair over the last seven days?", justify = LEFT, wraplength=500 ).grid(rowspan=2, columnspan=2)
+q8 = IntVar()
+for text, value in Q8list:
+    b = Radiobutton(win, text=text, variable=q8, value=value)
+    b.grid(sticky='W', rowspan=6, columnspan=2)
+
+Q9list = [
+        ("never", 1),
+        ("occasionally", 2),
+        ("sometimes", 3),
+        ("often", 4),
+        ("all the time.", 5)
+    ]
+Label(win, text="Q9 How often did you feel worried in the last seven days?", justify = LEFT, wraplength=500 ).grid(rowspan=2, columnspan=2)
+q9 = IntVar()
+for text, value in Q9list:
+    b = Radiobutton(win, text=text, variable=q9, value=value)
+    b.grid(sticky='W', rowspan=6, columnspan=2)
+
+Q10list = [
+        ("never", 1),
+        ("rarely", 2),
+        ("some of the time", 3),
+        ("usually", 4),
+        ("nearly all the time.", 5)
+    ]
+Label(win, text="Q10 How often do you feel sad?", justify = LEFT, wraplength=500 ).grid(rowspan=2, columnspan=2)
+q10 = IntVar()
+for text, value in Q10list:
+    b = Radiobutton(win, text=text, variable=q10, value=value)
+    b.grid(sticky='W', rowspan=6, columnspan=2)
+
+Q11list = [
+        ("always calm and tranquil", 1),
+        ("usually calm and tranquil", 2),
+        ("sometimes calm and tranquil, sometimes agitated", 3),
+        ("usually agitated", 4),
+        ("always agitated.", 5)
+    ]
+Label(win, text="Q11 Do you normally feel calm and tranquil or agitated?\nI am", justify = LEFT, wraplength=500 ).grid(rowspan=2, columnspan=2)
+q11 = IntVar()
+for text, value in Q11list:
+    b = Radiobutton(win, text=text, variable=q11, value=value)
+    b.grid(sticky='W', rowspan=6, columnspan=2)
+
+Q12list = [
+        ("always full of energy", 1),
+        ("usually full of energy", 2),
+        ("occasionally energetic", 3),
+        ("usually tired and lacking energy", 4),
+        ("always tired and lacking energy.", 5)
+    ]
+Label(win, text="Q12 How much energy do you have to do the things you want to do?\nI am", justify = LEFT, wraplength=500 ).grid(rowspan=2, columnspan=2)
+q12 = IntVar()
+for text, value in Q12list:
+    b = Radiobutton(win, text=text, variable=q12, value=value)
+    b.grid(sticky='W', rowspan=6, columnspan=2)
+
+
+Q13list = [
+        ("always", 1),
+        ("mostly", 2),
+        ("sometimes", 3),
+        ("only occasionally", 4),
+        ("never", 5)
+    ]
+Label(win, text="Q13 How often do you feel in control of your life?", justify = LEFT, wraplength=500 ).grid(rowspan=2, columnspan=2)
+q13 = IntVar()
+for text, value in Q13list:
+    b = Radiobutton(win, text=text, variable=q13, value=value)
+    b.grid(sticky='W', rowspan=6, columnspan=2)
+
+
+###p3###
+
+Q14list = [
+        ("completely", 1),
+        ("mostly", 2),
+        ("partly", 3),
+        ("very little", 4),
+        ("not at all.", 4)
+    ]
+Label(win, text="Q14 How much do you feel you can cope with life’s problems?", justify = LEFT, wraplength=500 ).grid(row=3, columnspan=2)
+q14 = IntVar()
+for text, value in Q14list:
+    b = Radiobutton(win, text=text, variable=q14, value=value)
+    b.grid(sticky='W', rowspan=5, columnspan=2)
+
+
+Q15list = [
+        ("very rarely", 1),
+        ("three to four times a week", 2),
+        ("three to four times a week", 3),
+        ("most of the time.", 4)
+    ]
+Label(win, text="Q15 How often do you experience serious pain?\nI experience it", justify = LEFT, wraplength=500 ).grid(rowspan=2, columnspan=2)
+q15 = IntVar()
+for text, value in Q15list:
+    b = Radiobutton(win, text=text, variable=q15, value=value)
+    b.grid(sticky='W', rowspan=6, columnspan=2)
+
+Q16list = [
+        ("none at all", 1),
+        ("I have moderate pain", 2),
+        ("I suffer from severe pain", 3),
+        ("I suffer unbearable pain.", 4)
+    ]
+Label(win, text="Q16 How much pain or discomfort do you experience?", justify = LEFT, wraplength=500 ).grid(rowspan=2, columnspan=2)
+q16 = IntVar()
+for text, value in Q16list:
+    b = Radiobutton(win, text=text, variable=q16, value=value)
+    b.grid(sticky='W', rowspan=6, columnspan=2)
+
+Q17list = [
+        ("never", 1),
+        ("rarely", 2),
+        ("sometimes", 3),
+        ("often", 4),
+        ("always", 5)
+    ]
+Label(win, text="Q17 How often does pain interfere with your usual activities?", justify = LEFT, wraplength=500 ).grid(rowspan=2, columnspan=2)
+q17 = IntVar()
+for text, value in Q17list:
+    b = Radiobutton(win, text=text, variable=q17, value=value)
+    b.grid(sticky='W', rowspan=6, columnspan=2)
+
+Q18list = [
+        ("I have excellent sight", 1),
+        ("I see normally", 2),
+        ("I have some difficulty focusing on things, or I do not see them sharply. E.g. small print, a newspaper or seeing objects in the distance.", 3),
+        ("I have a lot of difficulty seeing things. My vision is blurred. I can see just enough to get by with.", 4),
+        ("I only see general shapes. I need a guide to move around", 5),
+        ("I am completely blind.", 6)
+    ]
+Label(win, text="Q18 How well can you see (using your glasses or contact lenses if needed)?", justify = LEFT, wraplength=500 ).grid(rowspan=2, columnspan=2)
+q18 = IntVar()
+for text, value in Q18list:
+    b = Radiobutton(win, text=text, variable=q18, value=value)
+    b.grid(sticky='W', rowspan=6, columnspan=2)
+
+Q19list = [
+        ("I have excellent hearing", 1),
+        ("I hear normally", 2),
+        ("I have some difficulty hearing or I do not hear clearly. I have trouble hearing softly-spoken people or when there is background noise.", 3),
+        ("I have difficulty hearing things clearly. Often I do not understand what is said. I usually do not take part in conversations because I cannot hear what is said.", 4),
+        ("I hear very little indeed. I cannot fully understand loud voices speaking directly to me.", 5),
+        ("I am completely deaf.", 6)
+    ]
+Label(win, text="Q19 How well can you hear (using your hearing aid if needed)?", justify = LEFT, wraplength=500 ).grid(rowspan=2, columnspan=2)
+q19 = IntVar()
+for text, value in Q19list:
+    b = Radiobutton(win, text=text, variable=q19, value=value)
+    b.grid(sticky='W', rowspan=6, columnspan=2)
+
+
+Q20list = [
+        ("I have no trouble speaking to them or understanding what they are saying", 1),
+        ("I have some difficulty being understood by people who do not know me. I have no trouble understanding what others are saying to me.", 2),
+        ("I am understood only by people who know me well. I have great trouble understanding what others are saying to me.", 3),
+        ("I cannot adequately communicate with others.", 4)
+    ]
+Label(win, text="Q20 How well do you communicate with others (talking, signing, texting, being understood by others and understanding them)?", justify = LEFT, wraplength=500 ).grid(rowspan=2, columnspan=2)
+q20 = IntVar()
+for text, value in Q20list:
+    b = Radiobutton(win, text=text, variable=q20, value=value)
+    b.grid(sticky='W', rowspan=6, columnspan=2)

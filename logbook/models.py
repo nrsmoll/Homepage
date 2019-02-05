@@ -25,9 +25,22 @@ class Consultation(models.Model):
         choices=supervision_list,
         default=1, null=True)
     notes = models.TextField(max_length=20000,
-                             help_text='Enter a description of the consultation. Do not include the plan.', blank=True, null=True)
-    plan = models.TextField(max_length=10000, help_text='Enter the patients plan here', default='', blank=True, null=True)
+                             help_text='Enter a description of the consultation.', blank=True, null=True)
     date_of_entry = models.DateTimeField(null=False, auto_now_add=True)
+
+    direction_list = (
+        (str(1), 'Worse'),
+        (str(2), 'Unsure'),
+        (str(3), 'No change'),
+        (str(4), 'Better'),)
+    sentiment = models.CharField(
+        max_length=128,
+        choices=direction_list,
+        default=3, null=True, blank=True)
+
+    @property
+    def age(self):
+        return int((self.date_of_contact - self.birth_date).days / 365.25)
 
     def get_absolute_url(self):
         """Returns the url to access a detail record for this consultation."""
@@ -64,8 +77,6 @@ class Procedure(models.Model):
         choices=supervision_list,
         default=1, )
     notes = models.TextField(max_length=20000, help_text='Enter a description of the procedure', blank=True, null=True)
-    plan = models.TextField(max_length=10000, help_text='Enter the patients post-procedure plan here', default='',
-                            blank=True, null=True)
     date_of_entry = models.DateTimeField(null=False, auto_now_add=True)
 
     def __str__(self):
@@ -94,7 +105,7 @@ class Procedure_Class(models.Model):
 
     def __str__(self):
         """String for representing the Model object."""
-        return f'{self.procedure_class}'
+        return str(self.pk) + ' - ' + self.procedure_class
 
 
 class Location(models.Model):
@@ -102,7 +113,8 @@ class Location(models.Model):
     location = models.CharField(max_length=200)
     location_list = (
         (str(1), 'Hospital'),
-        (str(2), 'Community'),)
+        (str(2), 'General Practice'),
+        (str(3), 'Emergency Department'),)
     location_type = models.CharField(
         max_length=256,
         choices=location_list,

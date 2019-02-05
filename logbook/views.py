@@ -1,6 +1,8 @@
 from django.shortcuts import render
-
+from django.db.models import F, FloatField, ExpressionWrapper, DurationField
 from logbook.models import Consultation, Procedure
+import datetime
+from datetime import timedelta
 
 
 def index(request):
@@ -12,11 +14,20 @@ def logbook_index(request):
     # Generate counts of some of the main objects
     num_cases = Consultation.objects.all().count()
     num_medical = Consultation.objects.filter(specialty=1).count()
-    num_pediatric = Consultation.objects.filter(specialty=3).count()
+
+    num_pediatric = Consultation.objects.annotate(age=ExpressionWrapper(F('date_of_contact') - F('date_of_birth'),
+                    output_field=DurationField())).filter(age__lte=timedelta(days=6574.32)).count()
+
+    #num_pediatric = Consultation.objects.filter(date_of_contact__lte=F('date_of_birth') + (365.24*18)).count()
     num_og = Consultation.objects.filter(specialty=11).count()
     num_trauma = Consultation.objects.filter(specialty=6).count()
-    num_anesthetics = Consultation.objects.filter(specialty=14).count()
+    num_burns = Consultation.objects.filter(specialty=7).count()
     num_pallcare = Consultation.objects.filter(specialty=5).count()
+
+    num_diagnostic = Procedure.objects.filter(procedure_class=1).count()
+    num_vascularaccess = Procedure.objects.filter(procedure_class=3).count()
+    num_therapeutic = Procedure.objects.filter(procedure_class=2).count()
+    num_anesthesia = Procedure.objects.filter(procedure_class=4).count()
 
     # Total Procedures
     num_procedures = Procedure.objects.all().count()
@@ -27,9 +38,13 @@ def logbook_index(request):
         'num_pediatric': num_pediatric,
         'num_og': num_og,
         'num_trauma': num_trauma,
-        'num_anesthetics': num_anesthetics,
+        'num_burns': num_burns,
         'num_pallcare': num_pallcare,
         'num_procedures': num_procedures,
+        'num_diagnostic': num_diagnostic,
+        'num_vascularaccess': num_vascularaccess,
+        'num_therapeutic': num_therapeutic,
+        'num_anesthesia': num_anesthesia,
     }
 
     # Render the HTML template index.html with the data in the context variable
