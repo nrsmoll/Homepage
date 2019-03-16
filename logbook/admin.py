@@ -9,9 +9,9 @@ class ConsultationResource(resources.ModelResource):
     class Meta:
         model = Consultation
 
-
-class ConsultationAdmin(ImportExportModelAdmin):
+class ConsultationAdmin(ImportExportModelAdmin, admin.ModelAdmin):
     resource_class = ConsultationResource
+    fields = [('uid', 'name'), ('date_of_birth', 'sex'), ('date_of_contact', 'location', 'post_code'), ('specialty', 'diagnosis'), ('supervision', 'sentiment'), 'notes']
 
 
 class ProcedureResource(resources.ModelResource):

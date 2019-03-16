@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'machinelearn',
     'crispy_forms',
     'import_export',
+    'tinymce',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +60,7 @@ ROOT_URLCONF = 'Homepage.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        'DIRS': [os.path.join(BASE_DIR, 'templates/')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -122,3 +124,32 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 STATIC_URL = '/static/'
+
+
+TINYMCE_DEFAULT_CONFIG = {
+    'height': 360,
+    'width': 700,
+    'custom_undo_redo_levels': 20,
+    'selector': 'textarea',
+    'theme': 'modern',
+    'plugins': '''
+            textcolor save link image media preview contextmenu
+            table code lists fullscreen  insertdatetime  nonbreaking
+            contextmenu directionality searchreplace wordcount visualblocks
+            visualchars code fullscreen autolink lists  charmap print  hr
+            anchor pagebreak template
+            ''',
+    'toolbar1': '''
+            fullscreen preview bold italic underline | styleselect fontselect,
+            fontsizeselect  | forecolor backcolor | alignleft alignright |
+            aligncenter alignjustify | indent outdent | bullist numlist table |
+            | link image media | charmap hr pagebreak template
+            ''',
+    'contextmenu': 'formats | link image',
+    'menubar': True,
+    'statusbar': True,
+    'templates' : '''[
+    {title: 'Some title 1', description: 'Some desc 1', content: 'My content'},
+    {title: 'Some title 2', description: 'Some desc 2', url: 'development.html'}
+  ]'''
+    }

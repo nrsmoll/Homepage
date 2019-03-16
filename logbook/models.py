@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse  # Used to generate URLs by reversing the URL patterns
+from tinymce import models as tinymce_models
 
 
 class Consultation(models.Model):
@@ -24,7 +25,7 @@ class Consultation(models.Model):
         max_length=128,
         choices=supervision_list,
         default=1, null=True)
-    notes = models.TextField(max_length=20000,
+    notes = tinymce_models.HTMLField(max_length=20000,
                              help_text='Enter a description of the consultation.', blank=True, null=True)
     date_of_entry = models.DateTimeField(null=False, auto_now_add=True)
 
@@ -76,7 +77,7 @@ class Procedure(models.Model):
         max_length=128,
         choices=supervision_list,
         default=1, )
-    notes = models.TextField(max_length=20000, help_text='Enter a description of the procedure', blank=True, null=True)
+    notes = tinymce_models.HTMLField(max_length=20000, help_text='Enter a description of the procedure', blank=True, null=True)
     date_of_entry = models.DateTimeField(null=False, auto_now_add=True)
 
     def __str__(self):

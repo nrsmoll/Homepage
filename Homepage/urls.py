@@ -26,4 +26,5 @@ urlpatterns = [
                   path('', include('machinelearn.urls')),
                   path('', views.index, name='index'),
                   path('logbook/', include('django.contrib.auth.urls')),
+                  path('tinymce/', include('tinymce.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
