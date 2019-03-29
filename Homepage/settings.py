@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'crispy_forms',
     'import_export',
     'tinymce',
-    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -137,7 +136,7 @@ TINYMCE_DEFAULT_CONFIG = {
             table code lists fullscreen  insertdatetime  nonbreaking
             contextmenu directionality searchreplace wordcount visualblocks
             visualchars code fullscreen autolink lists  charmap print  hr
-            anchor pagebreak template
+            anchor pagebreak
             ''',
     'toolbar1': '''
             fullscreen preview bold italic underline | styleselect fontselect,
@@ -148,8 +147,4 @@ TINYMCE_DEFAULT_CONFIG = {
     'contextmenu': 'formats | link image',
     'menubar': True,
     'statusbar': True,
-    'templates' : '''[
-    {title: 'Some title 1', description: 'Some desc 1', content: 'My content'},
-    {title: 'Some title 2', description: 'Some desc 2', url: 'development.html'}
-  ]'''
-    }
+      }

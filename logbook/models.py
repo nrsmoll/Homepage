@@ -25,7 +25,7 @@ class Consultation(models.Model):
         max_length=128,
         choices=supervision_list,
         default=1, null=True)
-    notes = tinymce_models.HTMLField(max_length=20000,
+    notes = models.TextField(max_length=20000,
                              help_text='Enter a description of the consultation.', blank=True, null=True)
     date_of_entry = models.DateTimeField(null=False, auto_now_add=True)
 
