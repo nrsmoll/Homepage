@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <title>{% block label %}{% endblock %}</title>
 
@@ -17,9 +18,10 @@
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
             crossorigin="anonymous"></script>
     {% block header %}{% endblock %}
+    {% load static %}
 </head>
 
-
+<body>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -63,25 +65,23 @@
 </nav>
 
 
-<body>
-{% load static %}
-
-<div style="width:25%">
-    {% block sidebar %}
-        <ul class="sidebar-nav">
+<div class="col-xs-6 col-sm-3 row sidenav" id="sidebar" role="navigation">
+    <ul class="list-group sticky-top">
             <li><a href="{% url 'index' %}">Home</a></li>
             <li><a href="">Leadership Experience</a></li>
             <li><a href="">Research Experience</a></li>
             <li><a href="{% url 'logbook_index' %}">Logbook</a></li>
             <li><a href="{% static "publications/CV_nrs.pdf" %}">Curriculum Vitae</a></li>
         </ul>
-    {% endblock %}
-      </div>
+</div>
+
+
 <div class="main">
-    <div style="margin-left:25%">{% block content %}{% endblock %}</div>
+    {% block content %}{% endblock %}
 </div>
 
 
 </body>
+
 
 </html>
