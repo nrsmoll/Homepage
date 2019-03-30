@@ -1,10 +1,10 @@
-from datetime import timedelta
+from datetime import datetime, timedelta
 
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import F, ExpressionWrapper, DurationField
 from django.shortcuts import render
 from django.urls import reverse_lazy
-from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.views.generic import CreateView, UpdateView, DeleteView, ListView
 
 from logbook.forms import ConsultationForm
 from logbook.models import Consultation
@@ -24,7 +24,6 @@ def logbook_index(request):
     num_pediatric = Consultation.objects.annotate(age=ExpressionWrapper(F('date_of_contact') - F('date_of_birth'),
                     output_field=DurationField())).filter(age__lte=timedelta(days=6574.32)).count()
 
-    #num_pediatric = Consultation.objects.filter(date_of_contact__lte=F('date_of_birth') + (365.24*18)).count()
     num_og = Consultation.objects.filter(specialty=11).count()
     num_trauma = Consultation.objects.filter(specialty=6).count()
     num_burns = Consultation.objects.filter(specialty=7).count()
@@ -74,3 +73,12 @@ class ConsultationUpdate(LoginRequiredMixin, UpdateView):
 class ConsultationDelete(LoginRequiredMixin, DeleteView):
     model = Consultation
     success_url = reverse_lazy('logbook_index')
+
+
+class ConsultationList(LoginRequiredMixin, ListView):
+    model = Consultation
+    paginate_by = 10
+    context_object_name = 'my_recent_consultation_list'  # your own name for the list as a template variable
+    last_month = datetime.today() - timedelta(days=30)
+    queryset = Consultation.objects.filter(date_of_contact__gte=last_month).order_by('-date_of_contact')
+    # template_name = 'logbook/consultation_list.html'  # Specify your own template name/location

@@ -19,10 +19,11 @@
             crossorigin="anonymous"></script>
     {% block header %}{% endblock %}
     {% load static %}
+
 </head>
 
 <body>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
         <a class="navbar-brand" href="{% url 'index' %}">Home</a>
@@ -30,13 +31,13 @@
 
         <!-- collect the nav links, forms, and other content for toggling -->
       <ul class="nav navbar-nav">
-          <li class="nav-item">
+          <li class="nav-item ">
               <a class="nav-link" href="{% url 'publications' %}">Publications<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="#">Questionnaires<span class="sr-only">(current)</span></a></li>
 
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown ">
               <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">Machine Learning<span
                       class="caret"></span></a>
               <div class="dropdown-menu">
@@ -45,27 +46,32 @@
                   <a class="dropdown-item" href="#">Coming Soon 2</a>
               </div>
           </li>
-          <li class="nav-item dropdown">
+      </ul>
+        <ul class="nav navbar-nav ml-auto">
+            <div class="dropdown">
+                <li class="nav-item dropdown ">
               {% if user.is_authenticated %}
                   <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">User: {{ user.get_username }}</a>
-                  <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#"> Summary (soon)</a>
-                      <a class="dropdown-item" href="#"> Charts (soon)</a>
-                      <a class="dropdown-item" href={% url 'consultation_create' %}><span
-                              class="glyphicon glyphicon-plus-sign"></span>New Consultation</a>
-                      <a class="dropdown-item" href="#"><span class="glyphicon glyphicon-plus-sign"></span>New Procedure</a>
-                      <a class="dropdown-item" href="{% url 'logout' %}?next={{ request.path }}">Logout</a>
-                  </div>
+                  <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="{% url 'consultation_list' %}"> Consultation List</a></li>
+                      <li><a class="dropdown-item" href="#"> Charts (soon)</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a class="dropdown-item" href={% url 'consultation_create' %}>New Consultation</a></li>
+                      <li><a class="dropdown-item " href="#">New Procedure</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a class="dropdown-item" href="{% url 'logout' %}?next={{ request.path }}">Logout</a></li>
+                  </ul>
               {% else %}
-                  <a href="{% url 'login' %}?next={{ request.path }}"><span class="glyphicon glyphicon-log-in"></span>Login</a>
+                  <a href="{% url 'login' %}?next={{ request.path }}">Login</a>
               {% endif %}
           </li>
+            </div>
       </ul>
     </div>
 </nav>
 
 
-<div class="col-xs-6 col-sm-3 row sidenav" id="sidebar" role="navigation">
+<div class="sidenav" id="sidebar" role="navigation">
     <ul class="list-group sticky-top">
             <li><a href="{% url 'index' %}">Home</a></li>
             <li><a href="">Leadership Experience</a></li>
@@ -78,6 +84,24 @@
 
 <div class="main">
     {% block content %}{% endblock %}
+
+    {% block pagination %}
+        {% if is_paginated %}
+            <div class="pagination">
+            <span class="page-links">
+                {% if page_obj.has_previous %}
+                    <a href="{{ request.path }}?page={{ page_obj.previous_page_number }}">previous</a>
+                {% endif %}
+                <span class="page-current">
+                    Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                </span>
+                {% if page_obj.has_next %}
+                    <a href="{{ request.path }}?page={{ page_obj.next_page_number }}">next</a>
+                {% endif %}
+            </span>
+            </div>
+        {% endif %}
+    {% endblock %}
 </div>
 
 

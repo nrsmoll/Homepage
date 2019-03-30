@@ -1,5 +1,4 @@
 from django.db import models
-from django.urls import reverse  # Used to generate URLs by reversing the URL patterns
 from tinymce import models as tinymce_models
 
 
@@ -41,11 +40,11 @@ class Consultation(models.Model):
 
     @property
     def age(self):
-        return int((self.date_of_contact - self.birth_date).days / 365.25)
+        return int((self.date_of_contact - self.date_of_birth).days / 365.25)
 
-    def get_absolute_url(self):
-        """Returns the url to access a detail record for this consultation."""
-        return reverse('case-detail', kwargs={'pk': self.pk})
+    # def get_absolute_url(self):
+    #   """Returns the url to access a detail record for this consultation."""
+    #   return reverse('case-detail', kwargs={'pk': self.pk})
 
     def __str__(self):
         """String for representing the Model object."""
@@ -94,7 +93,7 @@ class Specialty(models.Model):
 
     def __str__(self):
         """String for representing the Model object."""
-        return str(self.pk) + ' - ' + self.specialty
+        return self.specialty
 
 
 class Procedure_Class(models.Model):
