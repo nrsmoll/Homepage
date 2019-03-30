@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Consultation List</h1>
+    {% if my_recent_consultation_list %}
+        <table class="table table-sm" style="width:90%">
+            <thead class="thead-dark">
+            <th>Name</th>
+            <th style="max-width: 40px;">Age</th>
+            <th>Date of Contact</th>
+            <th style="width: 200px;">Diagnosis</th>
+            <th style="width: 150px;">Specialty</th>
+            </thead>
+            {% for consult in my_recent_consultation_list %}
+                <tbody>
+                <tr>
+                    <td><a href="{{ consult.get_absolute_url }}">{{ consult.name }}</a></td>
+                    <td>{{ consult.age }}</td>
+                    <td>{{ consult.date_of_contact }}</td>
+                    <td>{{ consult.diagnosis }}</td>
+                    <td>{{ consult.specialty }}</td>
+                </tr>
+                </tbody>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>There are no consultations in the past 30 days.</p>
+    {% endif %}
+{% endblock %}
