@@ -21,10 +21,10 @@ from django.urls import path, include
 from logbook import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+                  path('admin/', admin.site.urls),
+                  path('accounts/', include('django.contrib.auth.urls')),
                   path('', include('logbook.urls')),
                   path('', include('machinelearn.urls')),
                   path('', views.index, name='index'),
-                  path('logbook/', include('django.contrib.auth.urls')),
                   path('tinymce/', include('tinymce.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

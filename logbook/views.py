@@ -1,8 +1,14 @@
-from django.shortcuts import render
-from django.db.models import F, FloatField, ExpressionWrapper, DurationField
-from logbook.models import Consultation, Procedure
-import datetime
 from datetime import timedelta
+
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.db.models import F, ExpressionWrapper, DurationField
+from django.shortcuts import render
+from django.urls import reverse_lazy
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
+
+from logbook.forms import ConsultationForm
+from logbook.models import Consultation
+from logbook.models import Procedure
 
 
 def index(request):
@@ -52,3 +58,19 @@ def logbook_index(request):
 
 def publications(request):
     return render(request, 'publications.html')
+
+
+class ConsultationCreate(LoginRequiredMixin, CreateView):
+    model = Consultation
+    form_class = ConsultationForm
+    success_url = reverse_lazy('logbook_index')
+
+
+class ConsultationUpdate(LoginRequiredMixin, UpdateView):
+    model = Consultation
+    form_class = ConsultationForm
+
+
+class ConsultationDelete(LoginRequiredMixin, DeleteView):
+    model = Consultation
+    success_url = reverse_lazy('logbook_index')

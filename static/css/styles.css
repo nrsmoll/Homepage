@@ -1,5 +1,46 @@
+/* The sidebar menu */
 .sidebar-nav {
-    margin-top: 20px;
-    padding: 0;
-    list-style: none;
+    /*height: 100%;  Full-height: remove this if you want "auto" height */
+    /*width: 180px;  Set the width of the sidebar */
+    position: fixed; /*Fixed Sidebar (stay in place on scroll) */
+    left: 0;
+    background-color: #989FA9;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px;
 }
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+    padding: 90px 0px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.summary-page {
+    width: 500px;
+}
+
+

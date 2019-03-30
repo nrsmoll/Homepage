@@ -42,7 +42,15 @@ INSTALLED_APPS = [
     'crispy_forms',
     'import_export',
     'tinymce',
+    'bootstrap4',
+    'bootstrap_datepicker_plus',
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+# this is for datepickers
+BOOTSTRAP4 = {
+    'include_jquery': True,
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -123,6 +131,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 STATIC_URL = '/static/'
+
+LOGIN_REDIRECT_URL = '/logbook_index/'
 
 
 TINYMCE_DEFAULT_CONFIG = {
