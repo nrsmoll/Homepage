@@ -1,0 +1,75 @@
+<!-- Loads the path to the static files-->
+{% extends "base.html" %}
+
+{% block content %}
+
+
+    <section class="summary-page">
+        <h1 style="text-align: center;">DASI Estimated VO<sup>2</sup> Max</h1>
+        <h2 style="text-align: center;">Parameter Input</h2>
+
+        <table class="table table-sm">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col"> Total DASI</th>
+                <th scope="col"> Estimated VO2 Max</th>
+                <th scope="col"> Hlatky VO<sup>2</sup> Max<a href="#ref2"><sup>1</sup></a></th>
+                <th scope="col"> METs</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td> {{ totaldasi }} </td>
+                <td> {{ vo2maxpred }} </td>
+                <td> {{ hlatkyvo2max }} </td>
+                <td> {{ mets }} </td>
+            </tr>
+            </tbody>
+        </table>
+        <br>
+        <h2 style="text-align: center;">Methods</h2>
+        <p>The models were built on a dataset created by the METs Investigators for the assessement of
+            functional capacity before major non-cardiac surgery.<a href="#ref2"><sup>2</sup></a> A range of machine
+            learning and traditional biostatistical models were tested. The goal was to find the best fitting model
+            with the lowest mean squared error and r<sup>2</sup>.</p>
+        <p>The models used to predict the VO<sup>2</sup> Max are as follows:</p>
+        <ul>
+            <li>Traditional Linear Regression</li>
+            <li>Kernal Ridge Regression</li>
+            <li>Random Forest Regression</li>
+            <li>Support Vector Regression</li>
+        </ul>
+        <p>The models underwent hyper-parameter tuning where appropriate, with cross-validation (as re-sampling
+            procedure)
+            of the training and test datasets. The data was modelled in it's simplest form,
+            with the yes/no answers to the DASI reduced to 0 and 1, instead of the suggested scores (which are simply
+            weights).
+            No transformation needed as the predictors were binary (0 and 1) as per the DASI questionnaire. </p>
+
+        <h2 style="text-align: center;">Models</h2>
+        <p>The final model chosen to predict the VO<sup>2</sup> Max and the AT was random forest regression
+            (RFR). It predicted VO<sup>2</sup> Max and AT better than all the other models tested, but resulting in a
+            low R<sup>2</sup> of 16.
+            This was still far better than the Hlatky equation resulting in a very low R<sup>2</sup> value of -1.8.
+            Caution is advised when utilizing
+            these results in clinical practice as the model accuracy is low. Nonetheless, the model presented here is
+            far better than what has been previously
+            used for the prediction of VO<sup>2</sup> Max and AT, without utilizing formal cardiopulmonary exercise
+            testing.</p>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <h4 class="summary-page">References</h4>
+    <p class="summary-page" id="ref1">Hlatky, M.A., Boineau, R.E., Higginbotham, M.B., Lee, K.L., Mark, D.B., Califf,
+        R.M., Cobb, F.R., Pryor, D.B. (1989).
+        A Brief Self -Administered Questionnaire to Determine Functional Capacity (The Duke Activity Status Index). Am J
+        Cardiol 64, 651–654.</p>
+    <p class="summary-page" id="ref2">[2] Wijeysundera DN, Pearse RM, Shulman MA, Abbott TEF, Torres E, Ambosta A, Croal
+        BL, Granton JT, Thorpe KE, Grocott MPW,
+        Farrington C, Myles PS, Cuthbertson BH9; METS study investigators. Assessment of functional capacity before
+        major non-cardiac surgery:
+        an international, prospective cohort study. Lancet. 2018 Jun 30;391(10140):2631-2640</p>
+{% endblock %}

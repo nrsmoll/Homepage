@@ -1,0 +1,23 @@
+<!-- Loads the path to the static files-->
+{% extends "base.html" %}
+{% block header %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/forms.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1>DASI Score Calculator</h1>
+    <br>
+    <h3>Are you able to:</h3>
+
+    <form action="mlDASI_results/" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+
+        <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+
+{% endblock %}
+
+

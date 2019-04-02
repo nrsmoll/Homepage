@@ -4,7 +4,7 @@ import pickle
 import numpy as np
 from django.shortcuts import render
 
-from .forms import CpetForm
+from .forms import CpetForm, DasiForm
 from .functions import create_cat
 
 
@@ -71,3 +71,59 @@ def mlcpet_calc(request):
     else:
         form = CpetForm()
     return render(request, 'mlCPET.html', {'form': form})
+
+
+# Create your views here.
+def mldasi_calc(request):
+    if request.method == 'POST':
+        form = DasiForm(request.POST)
+        if form.is_valid():
+
+            take_care = form.cleaned_data['take_care']
+            walk_indoors = form.cleaned_data['walk_indoors']
+            walk_200 = form.cleaned_data['walk_200']
+            climb_stairs = form.cleaned_data['climb_stairs']
+
+            run_short = form.cleaned_data['run_short']
+            light_work = form.cleaned_data['light_work']
+            moderate_work = form.cleaned_data['moderate_work']
+            heavy_work = form.cleaned_data['heavy_work']
+            yard_work = form.cleaned_data['yard_work']
+            sexual_relations = form.cleaned_data['sexual_relations']
+            moderate_rec = form.cleaned_data['moderate_rec']
+            strenuous_sports = form.cleaned_data['strenuous_sports']
+
+            mlist1d = np.array(
+                [take_care, walk_indoors, walk_200, climb_stairs, run_short, light_work, moderate_work, heavy_work,
+                 yard_work, sexual_relations, moderate_rec, strenuous_sports]).astype(float)
+            totaldasi = np.sum(mlist1d)
+            mlist = np.array([[take_care, walk_indoors, walk_200, climb_stairs, run_short, light_work, moderate_work,
+                               heavy_work, yard_work, sexual_relations, moderate_rec, strenuous_sports]]).astype(float)
+
+            for i in np.nditer(mlist, op_flags=['readwrite']):
+                if i > 0:
+                    i[...] = 1
+
+            # for pythonanywhere: the route has to be changed
+            # path = '/home/nrsmoll/Homepage/static/models'
+            path = '/home/nrsmoll/Dropbox/PyProjects/Homepage/static/models'
+            rf_path = os.path.join(path, 'rf_regression_20190402.pkl')
+            with open(rf_path, 'rb') as f:
+                rf = pickle.load(f)
+            vo2maxpred = int(list(rf.predict(mlist))[0])
+
+            hlatkyvo2max = round((0.43 * totaldasi) + 9.6, 2)
+            mets = round(vo2maxpred / 3.5, 2)
+
+            context = {'take_care': take_care, 'walk_indoors': walk_indoors,
+                       'walk_200': walk_200, 'climb_stairs': climb_stairs,
+                       'run_short': run_short, 'light_work': light_work,
+                       'moderate_work': moderate_work, 'heavy_work': heavy_work,
+                       'yard_work': yard_work, 'sexual_relations': sexual_relations,
+                       'moderate_rec': moderate_rec, 'strenuous_sports': strenuous_sports,
+                       'totaldasi': totaldasi, 'hlatkyvo2max': hlatkyvo2max, 'vo2maxpred': vo2maxpred,
+                       'mets': mets}
+            return render(request, 'mlDASI_results.html', context)
+    else:
+        form = DasiForm()
+    return render(request, 'mlDASI.html', {'form': form})
