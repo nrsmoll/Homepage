@@ -105,8 +105,8 @@ def mldasi_calc(request):
                     i[...] = 1
 
             # for pythonanywhere: the route has to be changed
-            # path = '/home/nrsmoll/Homepage/static/models'
-            path = '/home/nrsmoll/Dropbox/PyProjects/Homepage/static/models'
+            path = '/home/nrsmoll/Homepage/static/models'
+            #path = '/home/nrsmoll/Dropbox/PyProjects/Homepage/static/models'
             rf_path = os.path.join(path, 'rf_regression_20190402.pkl')
             with open(rf_path, 'rb') as f:
                 rf = pickle.load(f)
