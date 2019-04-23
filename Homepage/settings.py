@@ -134,6 +134,7 @@ STATIC_URL = '/static/'
 
 LOGIN_REDIRECT_URL = '/logbook_index/'
 
+DATE_INPUT_FORMATS = ['%d-%m-%Y']
 
 TINYMCE_DEFAULT_CONFIG = {
     'height': 360,

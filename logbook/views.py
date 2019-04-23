@@ -68,6 +68,8 @@ class ConsultationCreate(LoginRequiredMixin, CreateView):
 class ConsultationUpdate(LoginRequiredMixin, UpdateView):
     model = Consultation
     form_class = ConsultationForm
+    template_name = 'logbook/consultation_update_form.html'
+    success_url = reverse_lazy('consultation_list')
 
 
 class ConsultationDelete(LoginRequiredMixin, DeleteView):

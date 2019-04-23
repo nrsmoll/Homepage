@@ -11,14 +11,14 @@
             <th style="width: 200px;">Diagnosis</th>
             <th style="width: 150px;">Specialty</th>
             </thead>
-            {% for consult in my_recent_consultation_list %}
+            {% for consultation in my_recent_consultation_list %}
                 <tbody>
                 <tr>
-                    <td><a href="{{ consult.get_absolute_url }}">{{ consult.name }}</a></td>
-                    <td>{{ consult.age }}</td>
-                    <td>{{ consult.date_of_contact }}</td>
-                    <td>{{ consult.diagnosis }}</td>
-                    <td>{{ consult.specialty }}</td>
+                    <td><a href="{% url 'consultation_update' pk=consultation.id %}">{{ consultation.name }}</a></td>
+                    <td>{{ consultation.age }}</td>
+                    <td>{{ consultation.date_of_contact }}</td>
+                    <td>{{ consultation.diagnosis }}</td>
+                    <td>{{ consultation.specialty }}</td>
                 </tr>
                 </tbody>
             {% endfor %}
